@@ -1,16 +1,20 @@
-# Overview 
+# Projects 
 
-This are the centralised resources for my personal learning 
+This folder contains all the projects I am working on
 
 ---
 
-## Quick Links to My Work
+## Projects included (to be updated)
 
-1. [Personal Website](https://www.curiositydriven.uk/)
+1. Three Design Objects
 
-2. [Blog post](https://curiositydriven.uk/blog/)
+2. Personal Profile Page
 
-3. [Small Business Website](https://curiositydriven.uk/jenkins-butchers/)
+3. Typesetting 
+
+4. Design ethics 
+
+5. Small business website [Small Business Website](https://curiositydriven.uk/jenkins-butchers/)
 
 **I will keep my most updated code here**
 
