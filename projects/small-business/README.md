@@ -10,7 +10,7 @@
 
 ---
 
-### Welcome and Feel free to look around
+## Welcome and Feel free to look around
 
 * Please kindly leave any comment if you got any idea
 
