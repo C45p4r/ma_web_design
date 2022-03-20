@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   <3 thanks, Eric :-)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Fira Sans, Helvetica Neue, Helvetica, Calibri, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+	color: #333;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======================= My CSS Rules ======================= */
+
+/*
+
+* CH00 - CSS Reseets
+* CH01 - Structure & Colour
+* CH02 - Header Styling
+* CH03 - Content Styling
+* CH04 - Typograpphy
+* CH05 - Link Styling
+* CH06 - Media Queries
+
+Ctrl+F to search for chapters easily
+
+colours:
+ #fff       - white
+ #f9f7bb    - light yellow
+ #01273a    - night blue
+ #ff191b   - sharp red
+ #000       - black
+
+fonts:
+
+body text       - alegreya-sans, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+title (special) - fredericka-serif, Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, serif
+title (normal)  - ovo-serif, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif
+
+
+*/
+
+/* ======================= CH01 - Structure & Colour ======================= */
+
+body {
+    width: 90vw;
+/*    max-width: 2000px;*/
+    height: auto; 
+    margin: 1% auto; 
+    padding: 0;
+    
+    background-color: #01273a;
+    border: 1em #f9f7bb solid;
+}
+
+main {
+    margin: 0em;
+    padding: 1em;
+    color: #fff;
+}
+
+/* ======================= CH02 - Header Styling ======================= */
+
+header{
+	margin: 2em auto;
+}
+
+header nav {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+    padding: .8em;
+    text-decoration: none;
+}
+
+/* ======================= CH03 - Content Styling ======================= */
+
+p {
+    margin-top: 1em;
+}
+
+div.quote {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+.red {
+    padding: .2em;
+    background-color: #ff191b;
+    border: 2px #fff solid;
+    height: auto;
+    display: inline-block;
+}
+
+
+.reviews {
+    width: 100%;
+    height: auto;
+    display: flow-root;
+}
+
+.reviews blockquote {
+    margin-bottom: 1.5em;
+}
+
+blockquote cite {
+    font-size: 80%;
+    margin-left: .5em;
+/*    display: block;*/
+    font-style: italic;
+    
+/*    text-indent: 1em;*/
+}
+
+/* ======================= CH04 - Typograpphy ======================= */
+
+@font-face {
+   font-family: alegreya-sans;
+   src: url(fonts/alegreya-sans.light.ttf);
+}
+
+@font-face {
+   font-family: fredericka-serif;
+   src: url(fonts/fredericka-the-great.regular.ttf);
+}
+
+@font-face {
+   font-family: ovo-serif;
+   src: url(fonts/ovo.regular.ttf);
+}
+
+* {
+    font-family: alegreya-sans, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+h1 {
+    font-family: ovo-serif, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    font-size: 1.8em;
+    
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+h1 > cite {
+    font-family: fredericka-serif, Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, serif;
+    padding-right: .5em;
+    display: block;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: ovo-serif, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: #f9f7bb;
+    
+    margin-bottom: .8em;
+}
+
+h2 span {
+    font-size: 60%;
+    font-style: italic;
+    display: block;
+}
+
+h3 {
+    margin: 2em 0 1em .2em;
+    text-align: left;
+    font-size: .8em;
+}
+
+h3 ~ p {
+/*    text-indent: 1.5em;*/
+}
+
+h3.center { 
+    margin: 2em 0 1em 0;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-top: 1em;
+}
+
+.red {
+    font-family: ovo-serif, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    margin: 0 .2em;
+    font-size: 75%;
+}
+
+.quote {
+    background-color: #f9f7bb;
+    color: #01273a;
+}
+
+.quote p {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    padding: .4em;
+}
+
+.quote p:first-letter {
+    font-size: 150%;
+/*    padding-right: .1em;*/
+}
+
+/* ======================= CH05 - Link Styling ======================= */
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #f9f7bb;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #f9f7bb;
+}
+
+ul li.current {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ======================= CH06 - Media Queries ======================= */
+
+@media(min-width: 780px) {
+    /* --- Style --- */
+    main {
+        padding: 0 3em 2em 3em;
+    }
+    h1 {
+        font-size: 3.2em;
+        padding: .2em;
+    }
+    
+    h2{
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    h2 span {
+        font-size: .7em;
+    }
+    
+    header nav ul li {
+        font-size: 1.4em;
+        margin: 0 1em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+    
+    .quote p {
+        font-size: 1.8em;
+        line-height: 120%;
+    }
+    
+    blockquote {
+        font-size: 1.4em;
+    }
+    
+    /* --- Layout --- */
+    .reviews blockquote {
+        margin-bottom: 1.5em;
+        float: left;
+        width: 42%;
+        height: 9em;
+        margin: 1em;
+    }
+    
+    blockquote cite {
+        margin-top: .5em;
+        display: block;
+    }
+}
+
+@media(min-width: 1280px) {
+    /* --- Style --- */
+    main {
+        padding: 0 6em 3em 6em;
+    }
+    h1 {
+        font-size: 4em;
+        padding: .2em;
+    }
+    
+    h2 {
+        font-size: 2.8em;
+    }
+    
+    h2 span {
+        font-size: .6em;
+    }
+    
+    h3 {
+        font-size: 2.2em;
+    }
+    
+    header nav ul li {
+        font-size: 1.8em;
+        margin: 0 2em;
+    }
+    
+    p {
+        font-size: 1.65em;
+    }
+    
+    .quote p {
+        font-size: 2.5em;
+        line-height: 150%;
+    }
+    
+    blockquote {
+        font-size: 2em;
+    }
+    
+    /* --- Layout --- */
+    .reviews blockquote {
+        padding: 0;
+    }
+    
+    .reviews blockquote:nth-child(odd) {
+        margin-bottom: 1.5em;
+        float: left;
+        width: 42%;
+        height: 8em;
+        margin: 1em 0 1em 10%;
+        text-indent: 0;
+    }
+    .reviews blockquote:nth-child(even) {
+        margin-bottom: 1.5em;
+        float: right;
+        text-align: right;
+        width: 42%;
+        height: 8em;
+        margin: 1em 10% 1em 0;
+    }
+    
+    blockquote cite {
+        text-indent: 0;
+    }
+    
+    .wrapper2 {
+        display: flow-root;
+    }
+    
+    .wrapper2 div {
+        margin-bottom: calc(5em + 5vh);
+        float: left;
+        width: 42%;
+        height: 40em;
+        padding: 2em;
+        display: block;
+        font-size: 85%;
+    }
+}
+
+@media(min-width: 2000px) {
+    /* --- Style --- */
+    main {
+        padding: 2vh 6vw 3vh 6vw;
+    }
+    h1 {
+        font-size: 6vw;
+        padding: .2em;
+    }
+    
+    h2 {
+        font-size: 3.3vw;
+    }
+    
+    h3 {
+        font-size: 2.4vw;
+    }
+    
+    header {
+        margin-top: 6vh;
+    }
+    
+    header nav ul li {
+        font-size: 3vw;
+        margin: 0 2vw;
+    }
+    
+    p {
+        font-size: 1.8vw;
+    }
+    
+    .quote p {
+        font-size: 2vw;
+        line-height: 150%;
+    }
+    
+    blockquote {
+        font-size: 1.7vw;
+    }
+    
+     .wrapper2 {
+        display: flow-root;
+    }
+    
+    .wrapper2 div {
+        margin-bottom: 40em;
+        float: left;
+        width: 42%;
+        height: 80vh;
+        padding: 2em;
+        display: block;
+        font-size: 70%;
+    }
+
+}
+

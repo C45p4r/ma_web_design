@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   <3 thanks, Eric :-)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Fira Sans, Helvetica Neue, Helvetica, Calibri, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+	color: #333;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------
+Typography
+--------------------------------------------------- */
+
+body {
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size: 1em;
+
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,162,0,1) 100%);
+	background-image: url(plain-wood-bg.jpg);
+	margin: 1.5em auto;
+}
+
+h1, h2, cite {
+	font-family: 'Amiri', serif;
+}
+
+/* ---------------------------------------------------
+Header Styling
+--------------------------------------------------- */
+
+header {
+	text-align: center;
+	margin: 2em auto;
+}
+
+header:hover {
+	color: #612c00;
+}
+
+header h1 {
+	font-size: 3em;
+}
+
+cite {
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 2em auto;
+}
+
+/* ---------------------------------------------------
+Content Styling
+--------------------------------------------------- */
+
+header, main, footer{
+	max-width: 850px;
+	margin: 1em auto;
+	padding: 1em 2.5em;
+	border: 200px;
+	background-color: #FEFBEC;
+	border-left: 0.5em solid #612c00;
+}
+
+h2 {
+	border-bottom: 1px solid #cc5c00;
+	padding-top: 1em;
+
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+h2 :not(first-child) {
+	margin-top: 1em;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1.25em;
+	margin-top: 1em;
+	padding: 0.25em;
+}
+
+blockquote {
+	padding: 1.5em 1.5em;
+	background-color: white;
+	font-size: 1.5em;
+
+	margin: 1em auto;
+}
+
+main p.first::first-letter {
+	float: left;
+  font-size: 250%;
+  color: #612c00;
+	margin: 0.25em 0.25em 0em 0em;
+}
+
+/* link styling */
+a:link, a:visited {
+	text-decoration: none;
+	color: #ff8929;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #cc5c00;
+}
+
+/* ---------------------------------------------------
+FOOTER STYLING
+--------------------------------------------------- */
+
+footer {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-style: oblique;
+}
+
+footer p {
+	font-size: 0.8em;
+}
