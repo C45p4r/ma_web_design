@@ -1,6 +1,6 @@
 # Resources for main personal site
 
-This folder contains all the resources to be used by the index.html in the root folder
+This folder contains all the external resources to be used by the main site
 
 ---
 
