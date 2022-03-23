@@ -27,31 +27,7 @@
 			</defs>
 		</svg>
 		<!-- || header section || -->
-		<header>
-			<!-- top logo -->
-			<a href="index.html">
-				<picture class="shop-logo">
-					<source type="image/svg+xml" srcset="imgs/logo-blue.svg">
-					<img src="imgs/logo-blue.png" alt="Jenkin's Butcher logo">
-				</picture>
-			</a>
-			<!-- top navigation bar -->
-			<nav id="top-nav">
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="special.html">Special</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<!-- basic contact information without link -->
-			<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1030-1700</span>
-			<div class="strips-upper"></div>	<!-- visual element - blue stripy awning -->
-			<address>
-				<span class="lower">41 Main Street, Ballyclare</span>
-			</address>
-			<div class="strips-lower"></div>	<!-- visual element - blue stripy awning -->
-		</header>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers/sections/header.php'); ?>
 		<!-- || main content section || -->
 		<main>
 			<h1>Jenkin's Butcher | Home</h1>	<!-- header | current Page -->
@@ -111,55 +87,10 @@
 					<!-- embed google map using provided code (iFrame) -->
 					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.634159957998!2d-6.001213284427698!3d54.75123607625364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a58dea11c2a3%3A0x8219878eced9e36e!2s41%20Main%20St%2C%20Ballyclare%20BT39%209AA!5e0!3m2!1sen!2suk!4v1643913452706!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
-			<div class="content-wrap">
-				<h2 class="underline white">Contact us</h2>
-				<!-- contact details -->
-				<div class="btmInfo">
-					<a href="index.html">
-						<picture class="shop-logo small">	<!-- small logo -->
-							<source type="image/svg+xml" srcset="imgs/logo-white.svg">
-							<img src="imgs/logo.png" alt="Jenkin's Butcher logo">	<!-- fallback png file for svg -->
-						</picture>
-					</a>
-					<p>Opening Hours:</p>	
-					<p>Mon to Fri: 0800-1800</p>
-					<p>Sat to Sun: 1030-1700</p>
-				</div>
-				<address>	
-					<a href="https://goo.gl/maps/maJHvH7Akt7LfnARA">	<!-- link to google map -->
-						<svg class="icon icon-location">	<!-- svg icon -->
-							<use xlink:href="#icon-location"></use>	
-						</svg>
-						<span class="btmInfo">41 Main Street, Ballyclare</span><br />
-					</a>
-					<a href="mailto:contact@jenkinsbutcher.com">	<!-- link to default mail app -->
-						<svg class="icon icon-envelop">	<!-- svg icon -->
-							<use xlink:href="#icon-envelop"></use>
-						</svg>
-						<span class="btmInfo">contact@jenkinsbutcher.com</span><br />
-					</a>
-					<a href="tel:+442893952009">	<!-- link to phone app -->
-						<svg class="icon icon-phone">	<!-- svg icon -->
-							<use xlink:href="#icon-phone"></use>
-						</svg>
-						<span class="btmInfo">+44 28 9395 2009</span>
-					</a>
-				</address>
-			</div>
+			<!-- || contact section || -->
+			<? include($_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers/sections/contact.php'); ?>
 		</main>
 		<!-- || footer section || -->
-		<footer>
-			<nav id="bottom-nav">	<!-- bottom navigation bar -->
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="special.html">Special</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<!-- website information -->
-			<p>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
-			<p>University of Greenwich - 2022</p>
-		</footer>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers/sections/footer.php'); ?>
 	</body>
 </html>
