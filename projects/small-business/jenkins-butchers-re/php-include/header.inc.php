@@ -1,7 +1,7 @@
 <!-- || header section || -->
 <header>
 	<!-- top logo -->
-	<a href="index.html">
+	<a href="index.php">
 		<picture class="shop-logo">
 			<source type="image/svg+xml" srcset="imgs/logo-blue.svg">
 			<img src="imgs/logo-blue.png" alt="Jenkin's Butcher logo">
@@ -10,10 +10,10 @@
 	<!-- top navigation bar -->
 	<nav id="top-nav">
 		<ul>
-			<li><a href="about.html">About</a></li>
-			<li><a href="special.html">Special</a></li>
-			<li><a href="products.html">Products</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.php">About</a></li>
+			<li><a href="special.php">Special</a></li>
+			<li><a href="products.php">Products</a></li>
+			<li><a href="contact.php">Contact</a></li>
 		</ul>
 	</nav>
 

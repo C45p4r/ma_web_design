@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
 	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
-	<title>Home | Jenkin's Butchers</title>	<!-- webpage title -->
+	<title>Special | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scirpts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	<!-- use of external google font -->
@@ -26,7 +26,6 @@
 		</symbol>
 		</defs>
 	</svg>
-
 	<!-- || header section || -->
 	<header>
 		<!-- top logo -->
@@ -40,12 +39,11 @@
 		<nav id="top-nav">
 			<ul>
 				<li><a href="about.html">About</a></li>
-				<li><a href="special.html">Special</a></li>
+				<li>Special</li>
 				<li><a href="products.html">Products</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-
 		<!-- basic contact information without link -->
 		<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1030-1700</span>
 		<div class="strips-upper"></div>	<!-- visual element - blue stripy awning -->
@@ -54,65 +52,43 @@
 		</address>
 		<div class="strips-lower"></div>	<!-- visual element - blue stripy awning -->
 	</header>
-
 	<!-- || main content section || -->
 	<main>
-		<h1>Jenkin's Butcher | Home</h1>	<!-- header | current Page -->
+		<h1>Jenkin's Butcher | Special</h1>	<!-- header | current Page -->
 		<p class="sub">Premium meat from local farm</p>	<!-- short slogan -->
-		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
+		<img class="banner" src="imgs/banner-special.jpg" alt="special offers banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
 		<div class="content-wrap">
-			<h2 class="underline cw">Your Local Butcher</h2>	<!-- sub-title with underline (svg) --> 
-			<img class="featured" src="imgs/butcher-01.jpg" alt="photo of a butcher">	<!-- featured photo --> 
-			<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
-			<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
-			<p>Come and bring home the finest cut of meat for you and your family!</p>
-		</div>
-		<div class="content-wrap">
-			<h2 class="underline acw">We proudly offer</h2>
-			<div class="offers">	<!-- gallery-like view showing different offers -->
-				<figure>
-					<a href="products.html">
-						<img src="imgs/beef.png" alt="nice cut of beef">	
-					</a>
-						<figcaption>Beef</figcaption>
-				</figure>
-				<figure>
-					<a href="products.html">
-						<img src="imgs/pork.png" alt="nice cut of pork">
-					</a>
-						<figcaption>Pork</figcaption>
-				</figure>
-				<figure>
-					<a href="products.html">
-						<img src="imgs/chicken.png" alt="nice cut of poultry">
-					</a>
-						<figcaption>Chicken</figcaption>
-				</figure>
-				<figure>
-					<a href="products.html">
-						<img src="imgs/lamb.png" alt="nice cut of lamb">
-					</a>
-					<figcaption>Lamb</figcaption>
-				</figure>
-				<figure>
-					<a href="products.html">
-						<img src="imgs/sausages.png" alt="homemade sausages">
-					</a>
-					<figcaption>Sausages</figcaption>				
-				</figure>
-				<figure>
-					<a href="products.html">
-						<img src="imgs/cheese.png" alt="deli cheese">
-					</a>
-					<figcaption>Deli</figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="content-wrap">
-			<h2 class="underline cw">How to find us</h2>
-				<!-- embed google map using provided code (iFrame) -->
-				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.634159957998!2d-6.001213284427698!3d54.75123607625364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a58dea11c2a3%3A0x8219878eced9e36e!2s41%20Main%20St%2C%20Ballyclare%20BT39%209AA!5e0!3m2!1sen!2suk!4v1643913452706!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<h2 class="underline cw">Special Offers</h2>
+			<img class="categories" src="imgs/special-bundle.jpg" alt="meat bundle offer">
+			<h3>Meat Bundle</h3>
+			<p>Small family Butcher Baskets (~150 GBP)<p>
+			<ul>
+				<li>~1.5kg of steaks and/or chops</li>
+				<li>~2.5kg of larger roasting and/or braising cuts</li>
+				<li>~ 1 kg of of ground meat</li>
+			</ul>
+			<p>Large family Butcher Baskets (~200 GBP)<p>
+			<ul>
+				<li>~2.5kg of steaks and/or chops</li>
+				<li>~3.5kg of larger roasting and/or braising cuts</li>
+				<li>~ 2 kg of of ground meat</li>
+			</ul>
+			<img class="categories" src="imgs/special-bbq.jpg" alt="bbq bundle offer">
+			<p>Weekend bundle (45 GPB)<p>
+			<ul>
+				<li>1 Whole chicken</li>
+				<li>3 lbs Pork Loin Chops</li>
+				<li>5 lbs Boneless Blade Steak</li>
+				<li>3 lbs Lean Ground Beef</li>
+			</ul>
+			<p>Value bundle for family (65 GPB)<p>
+			<ul>
+				<li>4 lbs Pork Loin Chops</li>
+				<li>5 lbs Sirloin Tip Steak</li>
+				<li>2 Whole chicken</li>
+				<li>3 lbs Pork Side Ribs</li>
+			</ul>
 		</div>
 		<div class="content-wrap">
 			<h2 class="underline white">Contact us</h2>
@@ -150,21 +126,10 @@
 			</address>
 		</div>
 	</main>
-
+	
 	<!-- || footer section || -->
-	<footer>
-		<nav id="bottom-nav">	<!-- bottom navigation bar -->
-			<ul>
-				<li><a href="about.html">About</a></li>
-				<li><a href="special.html">Special</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<!-- website information -->
-		<p>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
-		<p>University of Greenwich - 2022</p>
-	</footer>
+	<!-- section included with php -->
+	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/footer.inc.php'; ?>
 
 </body>
 </html>
