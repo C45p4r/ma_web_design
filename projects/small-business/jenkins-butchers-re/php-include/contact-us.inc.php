@@ -1,3 +1,4 @@
+<!-- || contact us section || -->
 <div class="content-wrap">
 	<h2 class="underline white">Contact us</h2>
 	<!-- contact details -->
