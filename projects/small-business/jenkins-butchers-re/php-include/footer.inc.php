@@ -10,5 +10,5 @@
 	</nav>
 	<!-- website information -->
 	<p>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
-	<p>University of Greenwich - 2022</p>
+	<p>University of Greenwich - <? echo date("Y"); ?></p>
 </footer>

@@ -1,9 +1,10 @@
+<?php $this_page ="Home"; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
 	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
-	<title>Home | Jenkin's Butchers</title>	<!-- webpage title -->
+	<title><? echo $this_page; ?> | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scirpts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	<!-- use of external google font -->
@@ -22,7 +23,7 @@
 
 	<!-- || main content section || -->
 	<main>
-		<h1>Jenkin's Butcher | Home</h1>	<!-- header | current Page -->
+		<h1><? echo $this_page; ?> | Jenkin's Butchers</h1>	<!-- header | current Page -->
 		<p class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
@@ -84,7 +85,7 @@
 		<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/contact-us.inc.php'; ?>
 
 	</main>
-	
+
 	<!-- || footer section || -->
 	<!-- section included with php -->
 	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/footer.inc.php'; ?>
