@@ -1,5 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<?php $this_page ="Contact"; ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
 	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
@@ -36,7 +37,7 @@
 		<!-- || contact us section with bottom navigation|| -->
 		<!-- section included with php -->
 		<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/contact-us.inc.php'; ?>
-		
+
 	</main>
 
 	<!-- || footer section || -->

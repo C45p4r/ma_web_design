@@ -10,10 +10,28 @@
 	<!-- top navigation bar -->
 	<nav id="top-nav">
 		<ul>
-			<li><a href="about.php">About</a></li>
-			<li><a href="special.php">Special</a></li>
-			<li><a href="products.php">Products</a></li>
-			<li><a href="contact.php">Contact</a></li>
+			<?php
+			if ($this_page == "About"){
+				echo "<li>About</li>";
+			} else{
+				echo "<li><a href=\"about.php\">About</a></li>";
+			}
+			if ($this_page == "Special"){
+				echo "<li>Special</li>";
+			} else{
+				echo "<li><a href=\"special.php\">Special</a></li>";
+			}
+			if ($this_page == "Products"){
+				echo "<li>Products</li>";
+			} else{
+				echo "<li><a href=\"products.php\">Products</a></li>";
+			}
+			if ($this_page == "Contact"){
+				echo "<li>Contact</li>";
+			} else{
+				echo "<li><a href=\"contact.php\">Contact</a></li>";
+			}
+			?>
 		</ul>
 	</nav>
 
