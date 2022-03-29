@@ -18,9 +18,5 @@
 		<h1><? echo $this_page; ?></h1>	<!-- header | current Page -->
 		<p class="sub">Oh dear, We are really sorry, seems like something has gone wrong.</p>
 	</main>
-	<!-- || footer section || -->
-	<!-- section included with php -->
-	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/footer.inc.php'; ?>
-
 </body>
 </html>
