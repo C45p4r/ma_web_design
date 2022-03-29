@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/* ======= LAYOUT ======= */
+* {
+	box-sizing: border-box;
+}
+#content {
+	max-width: 960px;
+	padding: 25px 40px 40px 40px;
+	margin: 30px auto;
+}
+
+/* ======= TYPOGRAPHY & COLOUR ======= */
+body {
+	font-family: "Lato", Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+	color: #1a1a1a;
+	background-color: #ba400f;
+}
+.mustard {
+	background-color: #f2b22d;
+}
+.blue {
+	background-color: #0e8ed0;
+}
+.purple {
+	background-color: #5612a3;
+}
+#content {
+	background-color: #fff7f4;
+	box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
+}
+footer {
+	text-align: center;
+	padding-top: 20px;
+	border-top: 3px solid #bbb;
+	margin-top: 35px;
+}
+h1, h2 {
+	font-family: "Mukta Mahee", Verdana, Geneva, sans-serif;
+	color: #333;
+}
+h1 {
+	font-size: 3.2em;
+	margin-top: 25px;
+}
+h2 {
+	font-size: 1.8em;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #bbb;
+	margin-top: 25px;
+}
+h1 + h2 {
+	margin-top: 65px;
+}
+p {
+	line-height: 1.45;
+	margin-top: 25px;
+}
+p + p {
+	margin-top: 12px;
+}
+i {
+	font-style: italic;
+}
+a:link {
+	color: #1e5497;
+}
+a:visited {
+	color: #1e5497;
+}
+a:hover {
+	color: #c00;
+}
+
+/* ======= BACKGROUND SELECTOR ======= */
+#background {
+	font-size: 0.8em;
+	overflow: auto;
+}
+#background li {
+	float:right;
+}
+#background li:nth-child(-n+4) {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: 1px solid #555;
+}
+#background li+li {
+	margin-right: 8px;
+}
+#background li:nth-child(1) {
+	background-color: #ba400f;
+}
+#background li:nth-child(2) {
+	background-color: #f2b22d;
+}
+#background li:nth-child(3) {
+	background-color: #0e8ed0;
+}
+#background li:nth-child(4) {
+	background-color: #5612a3;
+}
