@@ -32,24 +32,19 @@ link.addEventListener('click', visibility);
 function visibility(e) {
 	e.preventDefault(); // prevent the default link function
 
-	var linkText = link.firstChild.nodeValue; // text node is the first child node for any link
-	// create a variable for check is it hidden
-	var elDisplay;
-
 	// decision making 
-	if (linkText === 'Read More'){
-		elDisplay = 'block';
-		linkText = 'Read Less';
+	if (link.firstChild.nodeValue === 'Read More'){
+		// remove the style attribute
+		for (var i = elNum; i < allMain.length; i++) {
+			allMain[i].removeAttribute('style');
+		}
+		link.firstChild.nodeValue = 'Read Less';
 	} else {
-		elDisplay = 'none';
-		linkText = 'Read More';
+		// add the display none
+		for (var i = elNum; i < allMain.length; i++) {
+			allMain[i].style.display = 'none';
+		}
+		
+		link.firstChild.nodeValue = 'Read More';
 	}
-
-	// change the bit according to the if statement
-	for (var i = elNum; i < allMain.length; i++) {
-		allMain[i].style.display = elDisplay;
-	}
-
-	// update the link text
-	link.textContent = linkText;
 }
