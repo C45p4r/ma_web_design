@@ -68,7 +68,8 @@ rust.onclick 	= rustBackground;
 
 // PART 3: BUILD THE FUNCTION TO RUN ON CLICK
 function purpleBackground(){
-	/*
+	/*  
+	// method used by David in the tutorial 
 	if (body.hasAttribute('class')) {
 		body.removeAttribute('class');
 	}
@@ -83,5 +84,5 @@ function mustardBackground(){
 	body.setAttribute('class', 'mustard');
 }
 function rustBackground(){
-	body.setAttribute('class', 'rust');
+	body.removeAttribute('class');
 }
