@@ -9,6 +9,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 /* ==== General styling ==== */
 body {
 	color: #fff;
@@ -38,7 +39,9 @@ button {
 /* ==== Styling swapped with JavaScript ==== */
 .circle {
 	border-radius: 50%;
+	background-color: red;
 }
 .square {
 	border-radius: 0;
+	background-color: yellow;
 }
