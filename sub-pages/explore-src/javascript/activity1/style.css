@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/*======= LAYOUT =======*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Lato", Calibri, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #090909;
+  background-color: #e5edf6;
+}
+header, main, footer {
+  width: 70%;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #83AAD6;
+}
+header {
+  background-color: #194a82;
+  padding: 3.5em 3.0em 4.2em;
+  border-color: #194a82;
+  border-bottom-width: 0;
+  margin-top: 3.0em;
+}
+main {
+  padding: 4.0em 3.0em 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+footer {
+  text-align: center;
+  padding: 3.0em 3.0em 2.0em;
+  border-top-width: 0;
+  margin-bottom: 3.0em;
+}
+/*======= TYPOGRAPHY =======*/
+h1, h2, h3 {
+  font-family: "Oswald", Arial, Helvetica, Times, sans-serif;
+  color: #194a82;
+  text-align: center; /* for mobile only */
+}
+h1 {
+  font-size: 4.0em;
+  color: #fff;
+}
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+p + h2 {
+  margin-top: 1.0em;
+}
+h3 {
+  font-size: 1.6em;
+}
+p + h3 {
+  margin-top: 1.8em;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #222;
+}
+p, li {
+  font-size: 1.2em;
+	line-height: 1.4em;
+  margin-top: 0.4em;
+}
+p + p, p + h4 {
+  margin-top: 1.6em;
+}
+h2 + p, h3 + p {
+  margin-top: 0.5em;
+}
+h3 + p {
+  font-style: italic;
+}
+em, i {
+  font-style: italic;
+}
+strong, b {
+  font-weight: 700;
+}
+/*======= LINKS =======*/
+a {
+  color: #cc0000;
+  text-decoration: none;
+}
+a:hover {
+  color: #ee0000;
+}
+/*======= JavaScript Link =======*/
+.more-link {
+  display: inline-block;
+  width: 8em;
+  float: right;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0.25em 0 0.35em;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  margin-top: 1.0em;
+}
+/*======= MEDIA QUERIES =======*/
+@media (min-width: 750px) {
+  h1, h2, h3 {
+    text-align: left;
+  }
+}

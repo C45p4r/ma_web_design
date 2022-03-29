@@ -86,6 +86,7 @@ function rustBackground(){
 
 // PART 4: GET BACKGROUND VALUE FORM LOCAL STORAGE AND SET CLASS ACCORDINGLY
 // check if there is a key and value pair in the local storage
+// it only works if it's online, because of how local storage works
 if (localStorage.getItem('background') !== null) {
 	body.removeAttribute('class');
 	var colour = localStorage.getItem('background');
