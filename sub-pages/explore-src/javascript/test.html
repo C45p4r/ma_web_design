@@ -12,14 +12,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- support old legacy browsers -->
 
   <!-- external resouces -->
-  <link href="#" rel="stylesheet">  <!-- external css -->
+  <link href="style.css" rel="stylesheet">  <!-- external css -->
   <link rel="icon" type="image/svg+xml" href="#.svg"> <!-- favicon -->
 </head>
 
 <body>
-
-  <h1>You must enable javascript to view this page</h1>
-  <div id="container"></div>
+  <h1>You must enable javascript see the magic (fake</h1>
+  <h2>Simple functions</h2>
+  <div>
+    <h3>Date & Time related</h3>
+      <p onclick="dateTime1()">dateTime1</p>
+      <p onclick="dateTime2()">dateTime2</p>
+      <p onclick="dateTime3()">dateTime3</p>
+    <h3>Adding element into the DOM</h3>
+      <p onclick="addElement1()">addElement1</p> 
+    <h3>Adding event listener</h3>
+      <p onclick="addEvent()">addEvent</p>
+      <p>No event now</p> 
+  </div>
+  This is the result: <div id="container">Trigger an event to change this</div>
   
   <script src="test.js"></script>
 </body>
