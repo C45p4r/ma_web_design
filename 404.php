@@ -12,13 +12,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- support old legacy browsers -->
 
   <!-- external resouces -->
-  <link href="#" rel="stylesheet">  <!-- external css -->
+  <link href="/src/scripts/style.css" rel="stylesheet">  <!-- external css -->
   <link rel="icon" type="image/svg+xml" href="#.svg"> <!-- favicon -->
 </head>
 
 <body>
 
-  Bespoke 404 error page to be updated.
+  <h1>Bespoke 404 error page to be updated.</h1>
   
   <script src="#"></script>
 </body>
