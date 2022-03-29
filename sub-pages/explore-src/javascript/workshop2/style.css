@@ -1,0 +1,54 @@
+/* ==== A crude reset ==== */
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==== General styling ==== */
+body {
+	color: #fff;
+	background-color: #000;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+}
+h1 {
+	margin-top: 50px;
+}
+div:first-of-type {
+	height: 200px;
+	width: 200px;
+	border: 5px solid #ddd;
+	margin: 40px auto;
+	transition-duration: 1.0s /* the time to change from circle to square */
+}
+button {
+	color: #fff;
+	background-color: #444;
+	font-size: 1.2em;
+	width: 120px;
+	padding: 10px 0;
+	margin: 15px;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+noscript p {	/*only appears if JS is unavailable*/
+	background-color: #c00;
+	padding: 7px 0;
+	margin:  0 auto;
+}
+
+/* ==== Styling swapped with JavaScript ==== */
+.circle {
+	border-radius: 50%;
+	background-color: red;
+}
+.square {
+	border-radius: 0;
+	background-color: yellow;
+}
