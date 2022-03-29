@@ -1,17 +1,48 @@
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
+		add content to the empty page 
+
+================================================= */
+var ul = document.createElement('ul');	// create new ul element
+var parent = document.getElementById('container');	// select parent element
+parent.appendChild(ul);	//append the element
+ul.id = "testFucs";
+
+// adding test js functions names as array variable
+var test = [
+	"testing",
+	"dateTime1",
+	"dateTime2",
+	"dateTime3"
+];
+
+// creating for loop to display all the names in the array as <li>
+for (i = 0; i < test.length; i++) {
+	var li = document.createElement('li');	// create new li element
+	li.innerHTML = test[i];	// assigning text to li using array value
+	ul.appendChild(li);	// append array li to ul
+}
+
+
+/* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
+
 		simple functions 
 
 ================================================= */
 
-// 1. simple getTime function re: 19Jan morning section
-var dateTime = new Date();
-var hours = dateTime.getHours();
-var minutes = dateTime.getMinutes();
-var msg = "The time is: " + hours + ":" + minutes;
-var el = document.getElementById('time1');
-el.innerHTML = msg;
+function testing(){
+	document.querySelector('h1').innerHTML = "successful!";
+}
 
+// 1. simple getTime function re: 19Jan morning section
+function dateTime1(){
+	var dateTime = new Date();
+	var hours = dateTime.getHours();
+	var minutes = dateTime.getMinutes();
+	var msg = "The time is: " + hours + ":" + minutes;
+	var el = document.getElementById('time1');
+	el.innerHTML = msg;
+}
 
 // 2. get day of the week
 var dateTime = new Date();
