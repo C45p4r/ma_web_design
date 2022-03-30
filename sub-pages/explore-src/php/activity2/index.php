@@ -9,9 +9,9 @@
 
 # Assign host, username, password and database name to variables
 $host     = "localhost"; # usually "localhost" but may be different
-$user     = "*********"; # add your database username here
-$password = "*********"; # add your database user password here
-$name     = "*********"; # add your database name here
+$user     = "curiosit_strange-tales"; # add your database username here
+$password = "2Id,1~vZd(?ZgM~}M{"; # add your database user password here
+$name     = "curiosit_strange-tales"; # add your database name here
 
 # Connect to the database or stop the script and give an error message
 $conn = mysqli_connect($host, $user, $password, $name) or die ("Cannot connect to database.");
