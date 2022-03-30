@@ -91,6 +91,7 @@
 	<!-- section included with php -->
 	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/footer.inc.php'; ?>
 
+	<script src="scripts/script.js"></script>
 </body>
 </html>
 
