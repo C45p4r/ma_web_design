@@ -10,8 +10,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	</head>
 	<body>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/header-include.php'); ?>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/navigation-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/header-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/navigation-include.php'); ?>
 		<main>
 			<h2>Craft and Beauty</h2>
 			<p><img src="images/flint-tool-design.png" alt="Flint cutting tool with red design">They say all things began as nothing. I should believe this, but it is difficult to conceive of nothing in the middle of a world that is so full. I close my eyes and try to picture a darkness, but even that is something. We are told that there was a big bang at the beginning of time that created the universe, but this turns creation into a spectacle. I’m skeptical of showmanship. The romantic in me wants to imagine there was no flash, no bang. Perhaps instead there was a quiet dignity to the spurring of matter from nothingness. I tell myself a story to draw back the darkness and fill the void.</p>
@@ -28,6 +28,6 @@
         
 			<p>There is often a diligence in construction to these axes, an elegant symmetry to their form. These details don’t necessarily contribute to the utility of the tool, but their presence implies that we’ve cared about craft ever since our minds first opened up to the idea of invention. A polished axe does not chop better, just as the refined design of a lamp does not necessarily light a room more fully. Beauty is a special form of craft that goes beyond making something work better.</p>
 		</main>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/footer-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/footer-include.php'); ?>
 	</body>
 </html>

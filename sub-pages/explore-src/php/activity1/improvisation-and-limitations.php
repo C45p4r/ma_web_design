@@ -10,8 +10,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
     </head>
 	<body>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/header-include.php'); ?>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/navigation-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/header-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/navigation-include.php'); ?>
 		<main>
 			<h2>Improvisation and Limitations</h2>
 			<p>The first step of any process should be to define the objectives of the work with Why-based questions. The second step, however, should be to put those objectives in a drawer. Objectives guide the process toward an effective end, but they don’t do much to help one get going. In fact, the weight of the objectives can crush the seeds of thought necessary to begin down an adventurous path.</p>
@@ -24,6 +24,6 @@
         
 			<p>The way one creatively wanders is through improvisation. Now that the objectives are in front of us again, we can use them as a way to guide our ambling and riff on ideas. It sounds strange, but I suspect that while you are riffing, you’ll find yourself reusing parts of the awful ideas you created earlier. The bad ideas have been documented and captured in some way, which turns them into a resource that can be mined in the process. New and better ideas will certainly come as well, but mixing the two speaks to the cumulative nature of improvising and the special sort of presence it requires. Ideas build on top of one another, and to do so well, one must be in the moment, actively poking at the current situation to use its opportunities as material for construction. Formalizing the properties of improvising is valuable, because it ensures that one can respond to the moment in artful and fitting ways before it fades.</p>
 		</main>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/footer-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/footer-include.php'); ?>
     </body>
 </html>

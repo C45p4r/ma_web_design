@@ -10,8 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	</head>
 	<body>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/header-include.php'); ?>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/navigation-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/header-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/navigation-include.php'); ?>
 		<main>
 			<h2>Introduction</h2>
 			<p><img src="images/latice-and-bird.png" alt="line art of bird and crystal latice">What is the marker of good design? It moves. The story of a successful piece of design begins with the movement of its maker while it is being made, and amplifies by its publishing, moving the work out and around. It then continues in the feeling the work stirs in the audience when they see, use, or contribute to the work, and intensifies as the audience passes it on to others. Design gains value as it moves from hand to hand; context to context; need to need. If all of this movement harmonizes, the work gains a life of its own, and turns into a shared experience that enhances life and inches the world closer to its full potential.</p>
@@ -30,6 +30,6 @@
 
 			<p>The practice, simply, is a way of thinking and moving that we use to enhance life. It is available to anyone. We listen to our song, watch how things move, imagine the arrangement, then act. We dance together backwards into the future, giving influence and taking it, forming and being formed. This is dance of eternity, and the shape of design. I hope to see you singing on the road.</p>
 		</main>
-		<? include($_SERVER['DOCUMENT_ROOT'] . '/php-stuff/includes/footer-include.php'); ?>
+		<? include($_SERVER['DOCUMENT_ROOT'] . '/sub-pages/explore-src/php/activity1/includes/footer-include.php'); ?>
 	</body>
 </html>
