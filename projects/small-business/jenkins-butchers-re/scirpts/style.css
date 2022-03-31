@@ -78,6 +78,13 @@ table {
 	~ Typhograpgy ~
 		Header font stack 	- 
 		Body font stack		- 
+	- - - - - - - - 
+	~ General Structure ~
+	selector {
+		// box model
+		... 
+		// content-related
+	}
 */
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -87,14 +94,23 @@ table {
 ================================================= */
 
 /* account for any border and padding in the values you specify */
-* {
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 1em;
+	/* box model */
+	margin: 0;
+  	padding: 0;
+
+	/* content-related */
+  	font-size: 1em;
+
+	/* colours */
+  	background-color: #fff;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -105,30 +121,30 @@ body {
 
 /*header section*/
 header {
-	margin-bottom: 2vh;
+	/* box model */
+	margin:  0;
+
+	/* content-related */
 	text-align: center;
+
+	/* colours */
+	/*background-color: #eeeff0;*/
 	background-color: #eeeff0;
 }
 
 /* shop logo  */
 picture.shop-logo {
-	display: block;
+	/* box model */
+	margin: 0 auto;	/*center element */
 	max-width: 150px;
 	max-height: 150px;
-	margin: 0 auto;	/*center element */
+
+	/* display type */
+	display: block;
+
+	/* effect */
 	border-radius: 50%;	/* create a circle background */
 }
-
-/*bottom shop logo*/
-picture.small {
-	display: block;
-	width: 100px;
-	height: 100px;
-	float: left;
-	margin: 1.2em 1.5em 0 .5em;
-	background-color: #bd8f87;
-}
-
 
 /* top navigation bar */
 #top-nav {
@@ -149,7 +165,7 @@ nav li{
 }
 
 #top-nav li{
-	margin: 1.5em 0em;
+	margin: 1em 0em;
 }
 
 /* stripy awning visual effect */
@@ -268,6 +284,22 @@ img.featured {
 /* first content container */
 .content-wrap p:first-of-type {
 	margin-top: 2em;
+}
+
+/* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
+
+		CHxx - Contact us section
+
+================================================= */
+
+/*bottom shop logo*/
+picture.small {
+	display: block;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 1.2em 1.5em 0 .5em;
+	background-color: #bd8f87;
 }
 
 /* last content container */	

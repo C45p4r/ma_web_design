@@ -1,0 +1,16 @@
+<form action="login.php" method="post">
+	<table class="styleForm" width="400px" height="200px">
+		<tr>
+			<th colspan="5"> Login </th>
+		</tr>
+		<tr>
+			<td colspan="2"> Username </td><td colspan="3"><input name="username" type="text" pattern="[A-Za-z0-9\S]{1,25}" required /></td>
+		</tr>
+		<tr>
+			<td colspan="2"> Password </td><td colspan="3"><input id="pass1" name="pass" pattern=".{8,}" type="password" required /></td>
+		</tr>
+		<tr>
+			<td colspan="5"><input type="submit" value="Login"></td>
+		</tr>
+	</table>
+</form>
