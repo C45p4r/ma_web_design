@@ -454,26 +454,24 @@ iframe.map {
 	background-color: gray;
 }
 
-/* adress info at the bottom */
-address a{
-	display: block;
-	margin-top: 1em;
-}
 
 /* bottom information */
-div.btmInfo {
-
-	display: block;
-	height: 120px;
-	width: auto;
-	margin: 1em auto;
-	padding: .2em;
+.btmWrapper {
+/* box */
+	margin-top: 2em;
+/* display */
+	display: flex;
+	gap:  3em;
+	justify-content: center;	/* align items horizontally */
+	align-items: center;	/* align items vertically */
 }
 
-div.btmInfo p {
-	font-size: .8em;
-	text-align: left;
-	line-height: 1em;
+.btmInfo {
+	display: flex;
+	flex-direction: column;
+	gap:  2em;
+	justify-content: center;	/* align items horizontally */
+	align-items: left;	/* align items vertically */
 }
 
 /* svg icons for contact info */
@@ -483,7 +481,7 @@ div.btmInfo p {
   width: 1em;
   height: 1em;
   fill: #bd8f87; /* can change to other colours */
-  margin-right: 1em;
+  margin-right: .5em;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
