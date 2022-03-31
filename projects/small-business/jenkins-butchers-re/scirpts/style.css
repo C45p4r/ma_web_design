@@ -589,9 +589,197 @@ a:hover,  a:active, a:focus{
 ================================================= */
 
 @media (min-width: 650px) {
-
+	picture.shop-logo {
+		max-width: 250px;
+		max-height: 250px;
+	}
+	picture.small {
+		width: 180px;
+		height: 180px;
+	}
+	#top-nav {
+		height: 9em;
+	}
+	#top-nav li {
+		margin: 2em 0em;
+		padding: .5em;
+		font-size: 160%;
+	}	
+	.strips-upper {
+		height: 110px;
+		width: 100%;
+	}
+	.strips-lower {
+		height: 120px;
+		width: 100%;
+	}
+	span.upper, span.lower {
+		font-size: 150%;
+	}	
+	span.lower {
+		margin: -2em 0;
+		transform: rotate(10deg);
+	}
+	.banner{
+		height: 300px;
+	}
+	.content-wrap {
+		margin: 3em auto;
+		padding: 2em 2em;
+	}
+	img.featured {
+		max-height: 400px;
+		max-width: 500px;
+	}
+	img.side {
+		width: 400px;
+		height: auto
+	}
+	.offers figure{
+		max-width: 400px;
+		max-height: 400px;
+	}
+	iframe.map {
+		max-width: 600px;
+		max-height: 400px;
+	}
+	div.btmInfo {
+		margin: .5em;
+		height: 300px;
+	}
+	div.btmInfo p {
+		line-height: 2.2em;
+	}
+	address a{
+		margin: 1em 3em;
+	}
+	.icon {
+		width: .5em;
+  		height: .5em;
+  		margin-right: .5em;
+	}
+	#bottom-nav {
+		height: 120px;
+	}
+	#bottom-nav li{
+		margin-left: 6.5em;
+	}
+	footer p {
+		padding: 1em 0;
+	}
+	/* header styling */
+	*{
+		font-size: 150%;
+	}
+	h1 {
+		max-width: 850px;
+	}
+	h2.underline, h3, h4, h5 ,h6{
+		margin-bottom: 1em;
+	}
 }
 
 @media (min-width: 950px) {
-
+	body{
+		max-width: 1250px;
+		margin: 1em auto;
+	}
+	picture.shop-logo {
+		max-width: 300px;
+		max-height: 300px;
+	}
+	picture.small {
+		width: 120px;
+		height: 120px;
+		padding: 0;
+		margin: .5em;
+	}
+	#top-nav {
+		height: 10em;
+	}
+	#top-nav ul{
+		transform: rotate(-3deg);
+	}
+	#top-nav li {
+		margin: 1.5em 0;
+		padding: .8em;
+		font-size: 200%;
+	}	
+	.strips-upper {
+		height: 150px;
+		width: 100%;
+	}
+	.strips-lower {
+		height: 180px;
+		width: 100%;
+	}
+	span.upper, span.lower {
+		font-size: 200%;
+	}	
+	span.lower {
+		margin: 0;
+	}
+	.banner{
+		height: 350px;
+	}
+	.content-wrap {
+		max-width: 1250px;
+		margin: 1em auto;
+	}
+	img.featured {
+		max-height: 550px;
+		max-width: 800px;
+	}
+	img.side {
+		width: 600px;
+		height: auto;
+	}
+	.offers figure{
+		max-width: 300px;
+		max-height: 300px;
+		width: 30%;
+		margin-left: 4%;
+	}
+	.offers img{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+	iframe.map {
+		max-width: 800px;
+		max-height: 600px;
+		width: 100%;
+	}
+	div.btmInfo {
+		margin-right: .5em;
+		padding: 0;
+		height: 150px;
+		width: 500px;
+		float: right;
+		font-size: 80%;
+	}
+	div.btmInfo p {
+		line-height: 1em;
+	}
+	#bottom-nav {
+		height: 120px;
+	}
+	#bottom-nav li{
+		margin-left: 8em;
+		font-size: 150%;
+	}
+	address a {
+		font-size: 80%;
+	}
+	footer p {
+		font-size: 100%;
+		text-align: center;
+	}
+	/* header styling */
+	*{
+		font-size: 200%;
+	}
+	h1 {
+		max-width: 850px;
+	}
 }
