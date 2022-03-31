@@ -3,12 +3,6 @@
 	<h2 class="underline white">Contact us</h2>
 	<!-- contact details -->
 	<div class="btmInfo">
-		<a href="index.html">
-			<picture class="shop-logo small">	<!-- small logo -->
-				<source type="image/svg+xml" srcset="imgs/logo-white.svg">
-				<img src="imgs/logo.png" alt="Jenkin's Butcher logo">	<!-- fallback png file for svg -->
-			</picture>
-		</a>
 		<p>Opening Hours:</p>	
 		<p>Mon to Fri: 0800-1800</p>
 		<p>Sat to Sun: 1030-1700</p>

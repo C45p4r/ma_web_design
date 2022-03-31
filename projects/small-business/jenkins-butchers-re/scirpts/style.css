@@ -90,7 +90,7 @@ table {
 		// display 
 		...
 
-		// content-related
+		// content
 		...
 
 		// effects
@@ -107,25 +107,22 @@ table {
 
 /* account for any border and padding in the values you specify */
 html {
-
-	/* box */
+/* box */
 	box-sizing: border-box;
-
 }
 *, *:before, *:after {
+/* box */
 	box-sizing: inherit;
 }
 
 body {
 
-	/* box */
+/* box */
 	margin: 0;
   	padding: 0;
-
-	/* content-related */
+/* content */
   	font-size: 1em;
-
-	/* effects */
+/* effects */
   	background-color: #fff;
 }
 
@@ -135,98 +132,94 @@ body {
 
 ================================================= */
 
-/* || header section || */
-header {
+/* ===== header section ===== */
 
-	/* box */
+header {
+/* box */
 	margin:  0;
-	/* content-related */
+/* content */
 	text-align: center;
-	/* effects */
-	/*background-color: #eeeff0;*/
-	background-color: red;
+/* effects */
+	background-color: #eeeff0;
 }
 
-/* || shop logo || */
+/* == shop logo == */
 picture.shop-logo {
-
-	/* box */
-	margin: 0 auto;	/*center element */
+/* box */
+	margin: 0 auto -1em;	/*center element */
 	max-width: 150px;
 	max-height: 150px;
-
-	/* display */
+/* display */
 	display: block;
-
-	/* effect */
+/* effect */
 	border-radius: 50%;	/* create a circle background */
 }
 
-/* || top navigation bar || */
-#top-nav {
-
-	/* box  */
-	margin-top: -1em;
+/* == top navigation bar == */
+nav {
+/* box  */
 	padding: 1.5em;
 	height: 5em;
-
-	/* effect */
-
-	-webkit-clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%); 
-	clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%);
+/* effect */
 	background-color: #353137;
 	color: #cd6a4e;
 }
+
+#top-nav {
+/* effect */
+	-webkit-clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%); 
+	clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%);
+}
+
 #top-nav ul{
+/* box */
+	padding: 1em 0;
+/* effect */
 	transform: rotate(-5deg);	/* rotation effect */
-}
-
-nav ul{
-
-	/* box */
-	margin-top: 1em;
-
-	/* display */
-	display: flex;	/* flex box */
-	gap: 1.2em;		/* add some space between flex items*/
-	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
-
-}
-	
-ul > *{
-
-	/* box */
-	padding:  .2em;
-	/*display: inline-block;*/
-	width: max-content;
-	flex-grow: 1;		/* allow flex items to auto adjust */
-	flex-shrink: 1;		/* allow flex items to shrink by themselves */
-	
-
-	/* effect  */
-	background-color: blue;
-	border: 1px white solid;
 }
 
 /* || bottom navigation bar || */
 #bottom-nav {
-	max-height: 80px;
+/* box */
+	padding-bottom: 2.5em;
+	height: 3em;
+}
+
+nav ul{	
+/* display */
+	display: flex;	/* flex box */
+	flex-direction: row;	
+	justify-content: center;	/* align items horizontally */
+	align-items: center;	/* align items vertically */
+	gap: 1em;		/* add some space between flex items*/
+	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
+}
+	
+ul > *{
+/*display: inline-block;*/
+	width: max-content;
+	flex-grow: 1;		/* allow flex items to auto adjust */
+	flex-shrink: 1;		/* allow flex items to shrink by themselves */
 }
 
 /* stripy awning visual effect */
 .strips-upper{
+/* box */
 	margin-bottom: -2em;
-	height: 80px;
 	width: 100%;
+	height: 5em;
+/* effect */
 	-webkit-clip-path: polygon(10% 0, 100% 100%, 100% 50%); 
 	clip-path: polygon(10% 0, 100% 100%, 100% 50%);
 	background-color: #7980a4;
 }
 
 .strips-lower{
+/* box */
 	margin-top: -70px;
-	height: 100px;
 	width: 100%;
+	height: 6em;
+/* effect */
 	-webkit-clip-path: polygon(0 0, 80% 100%, 16% 84%, 0 0, 9% 83%, 0 80%, 0 0); 
 	clip-path: polygon(0 0, 80% 100%, 16% 84%, 0 0, 9% 83%, 0 80%, 0 0);
 	background-color: #7980a4;
@@ -234,17 +227,20 @@ ul > *{
 
 /* information on stripy awning */
 span.upper {
-	margin-top: 1em;
-	margin-bottom: -1em;
+/* box */
+	margin: 1em 0 -.5em;
+/* display */
 	display: block;
-	margin-left: 5em;
+/* effect */
 	transform: rotate(5deg);
 }
 
 span.lower {
-	margin-top: .5em;
+/* box */
+	margin: 0 0 1em;
+/* display */
 	display: block;
-	margin-left: 5em;
+/* effect */
 	transform: rotate(16deg);
 }
 
@@ -256,8 +252,10 @@ span.lower {
 
 /* main section margin */
 main {
-	margin: 0;
-	padding-top: 3em;
+/* box */
+	margin: -2em 0 0;
+	padding-top: 2em;
+/* effect */
 	background-color: #cd6a4e;
 	-webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%); 
 	clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
@@ -265,10 +263,12 @@ main {
 
 /* banner - sorry fo the typical hero image */
 .banner{
-	display: block;
-	position: relative;
-	height: 150px;
+/* box */
 	width: 90%;
+	height: 150px;
+/* display */
+	display: block;
+/* effect */
 	-webkit-clip-path: polygon(0 40%, 100% 0, 90% 100%, 0% 100%); 
 	clip-path: polygon(0 40%, 100% 0, 90% 100%, 0% 100%);
 	border: 1px solid #502f32;
@@ -277,27 +277,29 @@ main {
 
 /* Header text on banner */
  h1, .sub {
- 	margin-top: 1em;
- 	margin-bottom: -.5em;
- 	margin-left: .2em;
- 	padding: 0;
+ /* box */
+ margin:.5em;
+ /* effect */
  	transform: rotate(-5deg);
  }
 
 /* short slogan */
  .sub {
- 	color: white;
- 	text-align: left;
+ /* box */
  	margin-left: 2em;
+ /* content */
+ 	text-align: left;
+ /* effect */
+ 	color: white;
  }
 
 /* basic content container */
 .content-wrap {
-	position: relative;
 	margin-top: 1.2em;
 	padding: 2em;
 	height: auto;
 	width: 100vw;
+/* effect */
 	background-color: white;
 	-webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%); 
 	clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
@@ -349,13 +351,15 @@ picture.small {
 
 /* last content container */	
 .content-wrap:last-of-type {
+/*  box */
+	padding: 1.5em;
+/* display */
+/* effect */
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	background-color: #502f32;
 	text-align: left;
 	color: white;
-	margin: 0;
-	padding: 1.5em;
 }
 
 /* white division line */
@@ -458,6 +462,7 @@ address a{
 
 /* bottom information */
 div.btmInfo {
+
 	display: block;
 	height: 120px;
 	width: auto;
@@ -487,23 +492,12 @@ div.btmInfo p {
 
 ================================================= */
 
-/* footer section */
-footer nav{
-  background-color: #353137;
-  color: #cd6a4e;
-}
-
 footer p{
   color: #353137;
   height: 20px;
   font-size:.7em;
   padding-top: .8em;
 }
-
-#bottom-nav li{
-	margin: .5em .4em;
-}
-
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
@@ -550,7 +544,6 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'IM Fell English SC','Times New Roman', Times, serif;
 	font-weight: bold;
 	line-height: 1.1;
-	margin: .5em auto;
 }
 
 header nav {
@@ -598,197 +591,9 @@ a:hover,  a:active, a:focus{
 ================================================= */
 
 @media (min-width: 650px) {
-	picture.shop-logo {
-		max-width: 250px;
-		max-height: 250px;
-	}
-	picture.small {
-		width: 180px;
-		height: 180px;
-	}
-	#top-nav {
-		height: 9em;
-	}
-	#top-nav li {
-		margin: 2em 0em;
-		padding: .5em;
-		font-size: 160%;
-	}	
-	.strips-upper {
-		height: 110px;
-		width: 100%;
-	}
-	.strips-lower {
-		height: 120px;
-		width: 100%;
-	}
-	span.upper, span.lower {
-		font-size: 150%;
-	}	
-	span.lower {
-		margin: -2em 0;
-		transform: rotate(10deg);
-	}
-	.banner{
-		height: 300px;
-	}
-	.content-wrap {
-		margin: 3em auto;
-		padding: 2em 2em;
-	}
-	img.featured {
-		max-height: 400px;
-		max-width: 500px;
-	}
-	img.side {
-		width: 400px;
-		height: auto
-	}
-	.offers figure{
-		max-width: 400px;
-		max-height: 400px;
-	}
-	iframe.map {
-		max-width: 600px;
-		max-height: 400px;
-	}
-	div.btmInfo {
-		margin: .5em;
-		height: 300px;
-	}
-	div.btmInfo p {
-		line-height: 2.2em;
-	}
-	address a{
-		margin: 1em 3em;
-	}
-	.icon {
-		width: .5em;
-  		height: .5em;
-  		margin-right: .5em;
-	}
-	#bottom-nav {
-		height: 120px;
-	}
-	#bottom-nav li{
-		margin-left: 6.5em;
-	}
-	footer p {
-		padding: 1em 0;
-	}
-	/* header styling */
-	*{
-		font-size: 150%;
-	}
-	h1 {
-		max-width: 850px;
-	}
-	h2.underline, h3, h4, h5 ,h6{
-		margin-bottom: 1em;
-	}
+
 }
 
 @media (min-width: 950px) {
-	body{
-		max-width: 1250px;
-		margin: 1em auto;
-	}
-	picture.shop-logo {
-		max-width: 300px;
-		max-height: 300px;
-	}
-	picture.small {
-		width: 120px;
-		height: 120px;
-		padding: 0;
-		margin: .5em;
-	}
-	#top-nav {
-		height: 10em;
-	}
-	#top-nav ul{
-		transform: rotate(-3deg);
-	}
-	#top-nav li {
-		margin: 1.5em 0;
-		padding: .8em;
-		font-size: 200%;
-	}	
-	.strips-upper {
-		height: 150px;
-		width: 100%;
-	}
-	.strips-lower {
-		height: 180px;
-		width: 100%;
-	}
-	span.upper, span.lower {
-		font-size: 200%;
-	}	
-	span.lower {
-		margin: 0;
-	}
-	.banner{
-		height: 350px;
-	}
-	.content-wrap {
-		max-width: 1250px;
-		margin: 1em auto;
-	}
-	img.featured {
-		max-height: 550px;
-		max-width: 800px;
-	}
-	img.side {
-		width: 600px;
-		height: auto;
-	}
-	.offers figure{
-		max-width: 300px;
-		max-height: 300px;
-		width: 30%;
-		margin-left: 4%;
-	}
-	.offers img{
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
-	}
-	iframe.map {
-		max-width: 800px;
-		max-height: 600px;
-		width: 100%;
-	}
-	div.btmInfo {
-		margin-right: .5em;
-		padding: 0;
-		height: 150px;
-		width: 500px;
-		float: right;
-		font-size: 80%;
-	}
-	div.btmInfo p {
-		line-height: 1em;
-	}
-	#bottom-nav {
-		height: 120px;
-	}
-	#bottom-nav li{
-		margin-left: 8em;
-		font-size: 150%;
-	}
-	address a {
-		font-size: 80%;
-	}
-	footer p {
-		font-size: 100%;
-		text-align: center;
-	}
-	/* header styling */
-	*{
-		font-size: 200%;
-	}
-	h1 {
-		max-width: 850px;
-	}
+
 }
