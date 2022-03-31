@@ -34,7 +34,7 @@
 			?>
 		</ul>
 	</nav>
-
+	
 	<!-- basic contact information without link -->
 	<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1030-1700</span>
 	<div class="strips-upper"></div>	<!-- visual element - blue stripy awning -->

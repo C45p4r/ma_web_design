@@ -76,14 +76,26 @@ table {
 		Light Pink			- #bd8f87	
 	- - - - - - - - 
 	~ Typhograpgy ~
-		Header font stack 	- 
+		Header font stack 	-  
 		Body font stack		- 
 	- - - - - - - - 
 	~ General Structure ~
+
+	// decription
 	selector {
-		// box model
+
+		// box
 		... 
+
+		// display 
+		...
+
 		// content-related
+		...
+
+		// effects
+		...
+
 	}
 */
 
@@ -95,77 +107,110 @@ table {
 
 /* account for any border and padding in the values you specify */
 html {
-  box-sizing: border-box;
+
+	/* box */
+	box-sizing: border-box;
+
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-	/* box model */
+
+	/* box */
 	margin: 0;
   	padding: 0;
 
 	/* content-related */
   	font-size: 1em;
 
-	/* colours */
+	/* effects */
   	background-color: #fff;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
-		CH02 - Header Styling 
+		CH02 - Header and navigation Styling 
 
 ================================================= */
 
-/*header section*/
+/* || header section || */
 header {
-	/* box model */
-	margin:  0;
 
+	/* box */
+	margin:  0;
 	/* content-related */
 	text-align: center;
-
-	/* colours */
+	/* effects */
 	/*background-color: #eeeff0;*/
-	background-color: #eeeff0;
+	background-color: red;
 }
 
-/* shop logo  */
+/* || shop logo || */
 picture.shop-logo {
-	/* box model */
+
+	/* box */
 	margin: 0 auto;	/*center element */
 	max-width: 150px;
 	max-height: 150px;
 
-	/* display type */
+	/* display */
 	display: block;
 
 	/* effect */
 	border-radius: 50%;	/* create a circle background */
 }
 
-/* top navigation bar */
+/* || top navigation bar || */
 #top-nav {
+
+	/* box  */
 	margin-top: -1em;
+	padding: 1.5em;
 	height: 5em;
+
+	/* effect */
+
 	-webkit-clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%); 
 	clip-path: polygon(0 55%, 100% 0, 100% 90%, 0% 100%);
 	background-color: #353137;
 	color: #cd6a4e;
 }
-
 #top-nav ul{
 	transform: rotate(-5deg);	/* rotation effect */
 }
 
-nav li{
-	display: inline-block;
+nav ul{
+
+	/* box */
+	margin-top: 1em;
+
+	/* display */
+	display: flex;	/* flex box */
+	gap: 1.2em;		/* add some space between flex items*/
+	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
+
+}
+	
+ul > *{
+
+	/* box */
+	padding:  .2em;
+	/*display: inline-block;*/
+	width: max-content;
+	flex-grow: 1;		/* allow flex items to auto adjust */
+	flex-shrink: 1;		/* allow flex items to shrink by themselves */
+	
+
+	/* effect  */
+	background-color: blue;
+	border: 1px white solid;
 }
 
-#top-nav li{
-	margin: 1em 0em;
+/* || bottom navigation bar || */
+#bottom-nav {
+	max-height: 80px;
 }
 
 /* stripy awning visual effect */
@@ -353,13 +398,13 @@ h2.acw {
 }
 
 /* unorder list styling for the main section */
-ul {
+/*ul {
 	text-align: left;
 	padding: 1em;
 	text-indent: .5em;
 	font-size: .9em;
 	line-height: 1.5em;
-}
+}*/
 
 /* general image styling */
 img {
@@ -434,11 +479,6 @@ div.btmInfo p {
   height: 1em;
   fill: #bd8f87; /* can change to other colours */
   margin-right: 1em;
-}
-
-/* bottom navigation bar */
-#bottom-nav {
-	max-height: 80px;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
