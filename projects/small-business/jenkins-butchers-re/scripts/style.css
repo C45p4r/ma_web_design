@@ -577,6 +577,10 @@ a.more-link {
 	color: #502f32;
 }
 
+a.underline {
+	text-decoration: underline;
+}
+
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
 		CH07 - Media Query 

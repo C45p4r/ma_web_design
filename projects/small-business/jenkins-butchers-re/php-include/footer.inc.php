@@ -1,6 +1,6 @@
 <!-- || footer section || -->
 <footer>
-	<nav id="bottom-nav">	<!-- bottom navigation bar -->
+	<nav id="bottom-nav" aria-label="footer navigation">	<!-- bottom navigation bar -->
 		<ul>
 			<?php
 			if ($this_page == "About"){

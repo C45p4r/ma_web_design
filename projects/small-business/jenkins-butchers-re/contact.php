@@ -7,6 +7,7 @@
 	<title>Contact | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
+	<meta name="description" content="Jenkin's Butcher is located at the Main Street of Ballyclare, come and visit us during our opening hour for the best meat cut!">
 	<!-- use of external google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +28,11 @@
 		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
-		<div class="content-wrap">
+		<div class="content-wrap h-card">
 			<h2 class="underline cw">How to find us</h2>
 			<!-- embed google map using provided code (iFrame) -->
 			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.634159957998!2d-6.001213284427698!3d54.75123607625364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a58dea11c2a3%3A0x8219878eced9e36e!2s41%20Main%20St%2C%20Ballyclare%20BT39%209AA!5e0!3m2!1sen!2suk!4v1643913452706!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			<p>Come to our local shop at 41 Main Street, Ballyclare and have a taste of our locally produced premium meat!</p>
+			<p>Come to the <span class="p-name">Jenkin's Butchers</span> shop at 41 Main Street, Ballyclare and have a taste of our locally produced premium meat!</p>
 		</div>
 
 		<!-- || contact us section with bottom navigation|| -->

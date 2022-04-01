@@ -105,4 +105,5 @@ var sub = document.getElementById('sub');
 msg = "Good " + greeting + ", we are now " + opening + " please " + action;
 sub.innerHTML = msg;
 
-// document.getElementById('sub').innerHTML = "I have changed!"; 
+// document.getElementById('sub').innerHTML = "I have changed!";
+

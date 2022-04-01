@@ -7,6 +7,7 @@
 	<title>Products | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
+	<meta name="description" content="Jenkin's Butchers has a varierty of products on the shelf, please come visit us and ask any of our staff for recommandation!">
 	<!-- use of external google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

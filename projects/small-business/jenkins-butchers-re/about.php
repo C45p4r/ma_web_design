@@ -7,6 +7,7 @@
 	<title>About | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
+	<meta name="description" content="Jenkin's Butchers is providing best meat product for the local community since 1932.">
 	<!-- use of external google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
