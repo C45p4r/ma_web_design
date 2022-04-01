@@ -29,10 +29,14 @@
 		<!-- | sections of content | -->
 		<div class="content-wrap">
 			<h2 class="underline cw">Your Local Butcher</h2>	<!-- sub-title with underline (svg) --> 
-			<img class="featured" src="imgs/butcher-01.jpg" alt="photo of a butcher">	<!-- featured photo --> 
-			<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
-			<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
-			<p>Come and bring home the finest cut of meat for you and your family!</p>
+			<div class="wrap1">
+				<img class="featured" src="imgs/butcher-01.jpg" alt="photo of a butcher">	<!-- featured photo --> 
+				<div class="text-wrap">
+					<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
+					<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
+					<p>Come and bring home the finest cut of meat for you and your family!</p>
+				</div>
+			</div>
 		</div>
 		<div class="content-wrap">
 			<h2 class="underline acw">We proudly offer</h2>
