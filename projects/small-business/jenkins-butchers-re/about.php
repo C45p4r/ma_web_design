@@ -49,8 +49,8 @@
 				<img class="side" src="imgs/butcher-02.png" alt="photo of Peter">
 				<div class="text-wrap">
 					<h3>Current shop owner - Peter</h3>
-					<p>As the third generation of Jenkin's Butchers, I will ensure that our shop provides the greatest quality, service, and experience for our Ballyclare community. <p>
-					</p>"Every customer is important to us, regardless of how much, or how little they spend"</p>
+					<p>As the third generation of Jenkin's Butchers, I will ensure that our shop provides the greatest quality, service, and experience for our Ballyclare community. 
+					</p><p>"Every customer is important to us, regardless of how much, or how little they spend"</p>
 				</div>
 			</div>
 			<div class="wrap1">
