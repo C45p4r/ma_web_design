@@ -29,35 +29,43 @@
 		<!-- | sections of content | -->
 		<div class="content-wrap">
 			<h2 class="underline cw">Special Offers</h2>
-			<img class="categories" src="imgs/special-bundle.jpg" alt="meat bundle offer">
-			<h3>Meat Bundle</h3>
-			<p>Small family Butcher Baskets (~150 GBP)<p>
-			<ul>
-				<li>~1.5kg of steaks and/or chops</li>
-				<li>~2.5kg of larger roasting and/or braising cuts</li>
-				<li>~ 1 kg of of ground meat</li>
-			</ul>
-			<p>Large family Butcher Baskets (~200 GBP)<p>
-			<ul>
-				<li>~2.5kg of steaks and/or chops</li>
-				<li>~3.5kg of larger roasting and/or braising cuts</li>
-				<li>~ 2 kg of of ground meat</li>
-			</ul>
-			<img class="categories" src="imgs/special-bbq.jpg" alt="bbq bundle offer">
-			<p>Weekend bundle (45 GPB)<p>
-			<ul>
-				<li>1 Whole chicken</li>
-				<li>3 lbs Pork Loin Chops</li>
-				<li>5 lbs Boneless Blade Steak</li>
-				<li>3 lbs Lean Ground Beef</li>
-			</ul>
-			<p>Value bundle for family (65 GPB)<p>
-			<ul>
-				<li>4 lbs Pork Loin Chops</li>
-				<li>5 lbs Sirloin Tip Steak</li>
-				<li>2 Whole chicken</li>
-				<li>3 lbs Pork Side Ribs</li>
-			</ul>
+			<div class="wrap1">
+				<img class="categories" src="imgs/special-bundle.jpg" alt="meat bundle offer">
+				<div class="text-wrap">
+					<h3>Meat Bundle</h3>
+					<p>Small family Butcher Baskets (~150 GBP)</p>
+					<ul>
+						<li>~1.5kg of steaks and/or chops</li>
+						<li>~2.5kg of larger roasting and/or braising cuts</li>
+						<li>~ 1 kg of of ground meat</li>
+					</ul>
+					<p>Large family Butcher Baskets (~200 GBP)</p>
+					<ul>
+						<li>~2.5kg of steaks and/or chops</li>
+						<li>~3.5kg of larger roasting and/or braising cuts</li>
+						<li>~ 2 kg of of ground meat</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap1">
+				<img class="categories" src="imgs/special-bbq.jpg" alt="bbq bundle offer">
+				<div class="text-wrap">
+					<p>Weekend bundle (45 GPB)</p>
+					<ul>
+						<li>1 Whole chicken</li>
+						<li>3 lbs Pork Loin Chops</li>
+						<li>5 lbs Boneless Blade Steak</li>
+						<li>3 lbs Lean Ground Beef</li>
+					</ul>
+					<p>Value bundle for family (65 GPB)</p>
+					<ul>
+						<li>4 lbs Pork Loin Chops</li>
+						<li>5 lbs Sirloin Tip Steak</li>
+						<li>2 Whole chicken</li>
+						<li>3 lbs Pork Side Ribs</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 
 		<!-- || contact us section with bottom navigation|| -->

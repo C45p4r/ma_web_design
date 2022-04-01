@@ -253,7 +253,7 @@ span.lower {
 /* main section margin */
 main {
 /* box */
-	margin: -2em 0 0;
+	margin: 0;
 	padding-top: 2em;
 /* effect */
 	background-color: #cd6a4e;
@@ -279,7 +279,7 @@ margin-top: -1.5em;
 /* Header text on banner */
  h1, .sub {
  /* box */
- margin:.5em;
+ 	margin:.5em;
  /* effect */
  	transform: rotate(-5deg);
  }
@@ -296,7 +296,7 @@ margin-top: -1.5em;
 
 /* basic content container */
 .content-wrap {
-	margin-top: 1.2em;
+	margin-top: 2em;
 	padding: 2em;
 	height: auto;
 	width: 100vw;
@@ -416,10 +416,6 @@ figcaption {
 
 /* might switch to float: left later */
 img.side {
-	display: block;
-	width: 250px;
-	height: auto;
-	margin: 2em auto;
 	-webkit-clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%); 
 	clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
 
@@ -427,8 +423,7 @@ img.side {
 
 /* large banner */
 img.categories {
-	margin: 2em auto;
-	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); 
+*/	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); 
 	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
@@ -498,18 +493,18 @@ footer p{
 
 /* h1 - will be used with banner on top */
 h1 {
-	font-size: 1.6em; 	/*fallback if calc() doesn't work */
-	font-size: calc(1.6em + .8vw);
-
+	font-size: 1.4em; 	/*fallback if calc() doesn't work */
+	font-size: calc(1.4em + .8vw);
+	text-align: center;
 	color: white;
- 	max-width: 380px;
+ 	width: 80%;
  	background-color: #502f32;
  	padding: .4em;
 }
 
 /* h2 header with background division line applied at the bottom */
 h2.underline {
-	margin: 0 0 0 -2.5em;
+	margin: 0 0 2em -2.5em;
 	padding: 0 0 1em 6em;
 	text-align: center;
 	background-image: url(../imgs/division-cow.svg);
@@ -617,7 +612,7 @@ a:hover,  a:active, a:focus{
 	}
 	header > nav {  
 		grid-area: 3 / 1 / 4 / 3;
-		transform: rotate(-3deg);
+		transform: rotate(0deg);
 	}
 	span.upper, span.lower {
 		margin: 0;
@@ -632,6 +627,7 @@ a:hover,  a:active, a:focus{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.wrap1 {
+		margin-bottom: 5em;
 		display: flex;
 		gap:  2rem;
 	}
@@ -640,6 +636,10 @@ a:hover,  a:active, a:focus{
 	}
 	img.featured {
 		max-height: 500px;
+	}
+	img.side {
+		max-height: 300px;
+		max-width: 300px;
 	}
 	img.featured ~ p {
 		padding: 1em;
@@ -650,14 +650,14 @@ a:hover,  a:active, a:focus{
 		grid-template-rows: repeat(2, 1fr);
 		grid-column-gap: 3em;
 	}
-	.wrap2 > img { 
+	.wrap2 > :nth-child(1) { 
 		grid-area: 1 / 1 / 3 / 2; 
 	}
-	.wrap2 > h3 { 
+	.wrap2 > :nth-child(2) { 
 		grid-area: 1 / 2 / 2 / 3; 
 		margin-top: 5em;
 	}
-	.wrap2 > ul { 
+	.wrap2 > :nth-child(3) { 
 		grid-area: 2 / 2 / 3 / 3; 
 	}
 	h3 + ul li{
