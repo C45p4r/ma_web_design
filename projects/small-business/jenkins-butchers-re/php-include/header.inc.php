@@ -36,7 +36,7 @@
 	</nav>
 	
 	<!-- basic contact information without link -->
-	<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1030-1700</span>
+	<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1000-1700</span>
 	<div class="strips-upper"></div>	<!-- visual element - blue stripy awning -->
 	<address>
 		<span class="lower">41 Main Street, Ballyclare</span>

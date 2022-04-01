@@ -5,7 +5,7 @@
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
 	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
 	<title><? echo $this_page; ?> | Jenkin's Butchers</title>	<!-- webpage title -->
-	<link href="scirpts/style.css" rel="stylesheet">	<!-- external style sheet -->
+	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	<!-- use of external google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,21 +24,21 @@
 	<!-- || main content section || -->
 	<main>
 		<h1><? echo $this_page; ?> | Jenkin's Butchers</h1>	<!-- header | current Page -->
-		<p class="sub">Premium meat from local farm</p>	<!-- short slogan -->
+		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
 		<div class="content-wrap">
 			<h2 class="underline cw">Your Local Butcher</h2>	<!-- sub-title with underline (svg) --> 
 			<div class="wrap1">
 				<img class="featured" src="imgs/butcher-01.jpg" alt="photo of a butcher">	<!-- featured photo --> 
-				<div class="text-wrap">
+				<div class="text-wrap-more">
 					<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
 					<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
 					<p>Come and bring home the finest cut of meat for you and your family!</p>
 				</div>
 			</div>
 		</div>
-		<div class="content-wrap">
+		<div class="content-wrap-more">
 			<h2 class="underline acw">We proudly offer</h2>
 			<div class="offers">	<!-- gallery-like view showing different offers -->
 				<figure>
@@ -89,8 +89,6 @@
 	<!-- || footer section || -->
 	<!-- section included with php -->
 	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/footer.inc.php'; ?>
-
-	<script src="scripts/script.js"></script>
 </body>
 </html>
 

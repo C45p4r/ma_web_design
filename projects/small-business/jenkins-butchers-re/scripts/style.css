@@ -384,12 +384,14 @@ h2.acw {
 
 
 .offers figure {
+	margin: 1em;
 	-webkit-clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
 	clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
 /*	transform: rotate(-3deg);*/
 	display: flex;
 	flex-direction: column;
-
+	background-color: #eeeff0;
+	border: 1px #eeeff0 solid;
 }
 
 .offers {
@@ -560,13 +562,19 @@ p {
 ================================================= */
 
 a:link, a:visited {
-  color: white;
+  color: #eeeff0;
   text-decoration: none;
   
 }
 a:hover,  a:active, a:focus{
   color: #bd8f87;
-  
+}
+
+a.more-link {
+	margin:  2em 0 0 1em;
+	padding: .5em;
+	text-decoration: underline;
+	color: #502f32;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -682,6 +690,11 @@ a:hover,  a:active, a:focus{
 	.content-wrap:last-of-type h2{
 		margin-left: 2em;
 		padding-left: 8em;
+	}
+	iframe.map { 
+		margin-left: 20%;
+		max-width: 880px;
+		max-height: 780px;
 	}
 }
 

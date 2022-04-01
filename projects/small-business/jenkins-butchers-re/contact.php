@@ -5,7 +5,7 @@
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
 	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
 	<title>Contact | Jenkin's Butchers</title>	<!-- webpage title -->
-	<link href="scirpts/style.css" rel="stylesheet">	<!-- external style sheet -->
+	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
 	<!-- use of external google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 	<!-- || main content section || -->
 	<main>
 		<h1>Jenkin's Butcher | Contact</h1>	<!-- header | current Page -->
-		<p class="sub">Premium meat from local farm</p>	<!-- short slogan -->
+		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
 		<div class="content-wrap">

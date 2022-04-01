@@ -30,3 +30,4 @@
 	<p>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
 	<p>University of Greenwich - <? echo date("Y"); ?></p>
 </footer>
+<script src="scripts/script.js"></script>
