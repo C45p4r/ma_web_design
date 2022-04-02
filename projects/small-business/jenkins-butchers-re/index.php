@@ -35,6 +35,7 @@
 				<div class="text-wrap-more">
 					<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
 					<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
+					<p>Don't worry if you don't know much about different meat cuts, just ask any of our staff/butcher, we are glad to explain and give you recommandations accorrding to your needs</p>
 					<p>Come and bring home the finest cut of meat for you and your family!</p>
 				</div>
 			</div>
