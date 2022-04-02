@@ -1,6 +1,6 @@
 <!-- || footer section || -->
 <footer>
-	<nav id="bottom-nav">	<!-- bottom navigation bar -->
+	<nav id="bottom-nav" role=”navigation” aria-label="footer navigation">	<!-- bottom navigation bar -->
 		<ul>
 			<?php
 			if ($this_page == "About"){
@@ -27,6 +27,7 @@
 		</ul>
 	</nav>
 	<!-- website information -->
-	<p>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
-	<p>University of Greenwich - <? echo date("Y"); ?></p>
+	<p role=”contentinfo>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
+	<p role=”contentinfo>University of Greenwich - <? echo date("Y"); ?></p>
 </footer>
+<script src="scripts/script.js"></script>
