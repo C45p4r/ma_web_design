@@ -23,7 +23,7 @@
 	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/header.inc.php'; ?>
 
 	<!-- || main content section || -->
-	<main>
+	<main role="main">
 		<h1>Jenkin's Butcher | About</h1>	<!-- header | current Page -->
 		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" role=”banner” src="imgs/banner-about.jpg" alt="about page banner">	<!-- banner reflecting the theme -->

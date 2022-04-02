@@ -23,7 +23,7 @@
 	<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/header.inc.php'; ?>
 
 	<!-- || main content section || -->
-	<main>
+	<main role="main">
 		<h1><? echo $this_page; ?> | Jenkin's Butchers</h1>	<!-- header | current Page -->
 		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
 		<img class="banner" role=”banner” src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
@@ -44,37 +44,37 @@
 			<h2 class="underline acw">We proudly offer</h2>
 			<div class="offers">	<!-- gallery-like view showing different offers -->
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/beef.png" alt="nice cut of beef">	
 					</a>
 						<figcaption>Beef</figcaption>
 				</figure>
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/pork.png" alt="nice cut of pork">
 					</a>
 						<figcaption>Pork</figcaption>
 				</figure>
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/chicken.png" alt="nice cut of poultry">
 					</a>
 						<figcaption>Chicken</figcaption>
 				</figure>
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/lamb.png" alt="nice cut of lamb">
 					</a>
 					<figcaption>Lamb</figcaption>
 				</figure>
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/sausages.png" alt="homemade sausages">
 					</a>
 					<figcaption>Sausages</figcaption>				
 				</figure>
 				<figure>
-					<a href="products.html">
+					<a href="products.php">
 						<img src="imgs/cheese.png" alt="deli cheese">
 					</a>
 					<figcaption>Deli</figcaption>

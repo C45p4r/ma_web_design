@@ -21,7 +21,7 @@
 		<!-- section included with php -->
 		<? include $_SERVER['DOCUMENT_ROOT'] . '/projects/small-business/jenkins-butchers-re/php-include/header.inc.php'; ?>
 	<!-- || main content section || -->
-	<main>
+	<main role="main">
 		<h1><? echo $this_page; ?></h1>	<!-- header | current Page -->
 		<p class="sub">Oh dear, We are really sorry, seems like something has gone wrong.</p>
 		<p class="sub">You might want to check out the <a class="underline" href="https://www.wpoven.com/blog/error-404-not-found/">Link</a> Here for an answer</p>

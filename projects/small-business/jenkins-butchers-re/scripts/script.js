@@ -71,7 +71,7 @@ if(weekday[n] === "Saturady" || weekday[n] === "Sunday"){
 	} else if (hours > 12) {
 		greeting = "afternoon";
 		opening = "open";
-		action = "come before 1700 for the best cut";
+		action = "come before 5pm for the best cut";
 	} else if (hours > 10){
 		greeting = "morning";
 		opening = "open";
@@ -79,7 +79,7 @@ if(weekday[n] === "Saturady" || weekday[n] === "Sunday"){
 	} else {
 		greeting = "morning";
 		opening = "closed";
-		action = "come after 1000 for the best cut";
+		action = "visit us today after 10am";
 	}	
 }else{
 	if (hours > 18) {
@@ -89,7 +89,7 @@ if(weekday[n] === "Saturady" || weekday[n] === "Sunday"){
 	} else if (hours > 12) {
 		greeting = "afternoon";
 		opening = "open";
-		action = "come before 1700 for the best cut";
+		action = "come before 6pm for the best cut";
 	} else if (hours > 8){
 		greeting = "morning";
 		opening = "open";
@@ -97,7 +97,7 @@ if(weekday[n] === "Saturady" || weekday[n] === "Sunday"){
 	} else {
 		greeting = "morning";
 		opening = "closed";
-		action = "come after 1000 for the best cut";
+		action = "visit us today after 8am";
 	}
 }
 
