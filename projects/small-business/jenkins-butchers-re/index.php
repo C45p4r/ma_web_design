@@ -3,7 +3,8 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
-	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
+	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">	<!-- site icon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<title><? echo $this_page; ?> | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
@@ -44,11 +45,11 @@
 			<h2 class="underline acw">We proudly offer</h2>
 			<div class="offers">	<!-- gallery-like view showing different offers -->
 				<figure>
-					<a href="products.php">
+					<a href="	">
 						<img src="imgs/beef.png" alt="nice cut of beef">	
 					</a>
 						<figcaption>Beef</figcaption>
-				</figure>
+				</figure>	
 				<figure>
 					<a href="products.php">
 						<img src="imgs/pork.png" alt="nice cut of pork">
