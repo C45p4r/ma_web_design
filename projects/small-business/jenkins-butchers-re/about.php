@@ -31,7 +31,7 @@
 		<div class="content-wrap">
 				<h2 class="underline cw">About us</h2>
 				<div class="wrap1">
-				<img class="featured" src="imgs/about-01.png" alt="old photo of the founder">	<!-- featured photo -->
+				<img class="featured" src="imgs/about-01.jpg" alt="old photo of the founder">	<!-- featured photo -->
 				<div class="text-wrap">
 					<p>Established in 1932, the Jenkins’ Butchers, purveyors of premium meat are committed to serving fresh meat that is seasonal, locally sourced, and grown in a sustainable manner</p>
 					<p>Over the years, we dedicated to providing excellent service to our customers. We pride ourselves in providing fresh, premium meat cut deliveried from local farm. Fresh, local produce is our main aim.</p>
