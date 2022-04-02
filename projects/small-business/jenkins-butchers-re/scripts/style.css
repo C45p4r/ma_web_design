@@ -279,7 +279,7 @@ margin-top: -1.5em;
 /* Header text on banner */
  h1, .sub {
  /* box */
- 	margin:.5em;
+ 	margin: 2em;
  /* effect */
  	transform: rotate(-5deg);
  }
@@ -751,7 +751,7 @@ a.underline {
 	.banner {
 		margin-left: 5%;
 		width: 80%;
-		height: 20vh;
+		height: 40vh;
 	}
 	.wrap1 {
 		padding:  0 3em;
