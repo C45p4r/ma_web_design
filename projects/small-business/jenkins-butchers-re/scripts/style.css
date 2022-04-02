@@ -425,7 +425,7 @@ img.side {
 
 /* large banner */
 img.categories {
-*/	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); 
+-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); 
 	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
@@ -456,7 +456,7 @@ iframe.map {
 	flex-direction: column;
 	gap:  2em;
 	justify-content: center;	/* align items horizontally */
-	align-items: left;	/* align items vertically */
+	align-items: center;	/* align items vertically */
 }
 
 /* svg icons for contact info */

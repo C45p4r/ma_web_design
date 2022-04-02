@@ -1,0 +1,207 @@
+<?php $this_page ="Home"; ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">	<!-- support most characters and symbols -->
+	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">	<!-- site icon -->
+	<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+	<title><? echo $this_page; ?> | Jenkin's Butchers</title>	<!-- webpage title -->
+	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
+	<meta name="description" content="Jenkin's Butchers provides the best meat cut for you, fresh from local farm everyday, come visit us!">
+	<!-- use of external google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=IM+Fell+English+SC&family=Jost:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<!-- svg of the contact icons -->
+	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+		<symbol id="icon-phone" viewBox="0 0 32 32">
+			<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+		</symbol>
+		<symbol id="icon-envelop" viewBox="0 0 32 32">
+			<path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+		</symbol>
+		<symbol id="icon-location" viewBox="0 0 32 32">
+			<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+		</symbol>
+		</defs>
+	</svg>
+
+	<!-- || header section || -->
+	<header>
+		<!-- top logo -->
+		<a href="index.php">
+			<picture class="shop-logo">
+				<source type="image/svg+xml" srcset="imgs/logo-blue.svg">
+				<img src="imgs/logo-blue.png" alt="Jenkin's Butcher logo">
+			</picture>
+		</a>
+		<!-- top navigation bar -->
+		<nav id="top-nav" role=”navigation” aria-lable = "website">
+			<ul>
+				<!-- <?php
+				if ($this_page == "About"){
+					echo "<li>About</li>";
+				} else{
+					echo "<li><a href=\"about.php\">About</a></li>";
+				}
+				if ($this_page == "Special"){
+					echo "<li>Special</li>";
+				} else{
+					echo "<li><a href=\"special.php\">Special</a></li>";
+				}
+				if ($this_page == "Products"){
+					echo "<li>Products</li>";
+				} else{
+					echo "<li><a href=\"products.php\">Products</a></li>";
+				}
+				if ($this_page == "Contact"){
+					echo "<li>Contact</li>";
+				} else{
+					echo "<li><a href=\"contact.php\">Contact</a></li>";
+				}
+				?> -->
+			</ul>
+		</nav>
+		
+		<!-- basic contact information without link -->
+		<span class="upper">Mon-Fri 0800-1800 | Sat-Sun 1000-1700</span>
+		<div class="strips-upper"></div>	<!-- visual element - blue stripy awning -->
+		<address>
+			<span class="lower">41 Main Street, Ballyclare</span>
+		</address>
+		<div class="strips-lower"></div>	<!-- visual element - blue stripy awning -->
+	</header>
+
+	<!-- || main content section || -->
+	<main role="main">
+		<h1><? echo $this_page; ?> | Jenkin's Butchers</h1>	<!-- header | current Page -->
+		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
+		<img class="banner" role=”banner” src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
+		<!-- | sections of content | -->
+		<div class="content-wrap">
+			<h2 class="underline cw">Your Local Butcher</h2>	<!-- sub-title with underline (svg) --> 
+			<div class="wrap1">
+				<img class="featured" src="imgs/butcher-01.jpg" alt="photo of a butcher">	<!-- featured photo --> 
+				<div class="text-wrap-more">
+					<p>Jenkins' Butchers is a traditional butcher shop in Ballyclare that has proudly served the Ballyclare community for the past 90 years. </p>
+					<p>We provides locally reared, choice and prime beef that has been aged for at least 21 days for tenderness and flavour.  We also provide a huge selection of pork, lamb, and poultry, as well as homemade sausages and various deli chesses.</p>
+					<p>Don't worry if you don't know much about different meat cuts, just ask any of our staff/butcher, we are glad to explain and give you recommandations accorrding to your needs</p>
+					<p>Come and bring home the finest cut of meat for you and your family!</p>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrap-more">
+			<h2 class="underline acw">We proudly offer</h2>
+			<div class="offers">	<!-- gallery-like view showing different offers -->
+				<figure>
+					<a href="	">
+						<img src="imgs/beef.png" alt="nice cut of beef">	
+					</a>
+						<figcaption>Beef</figcaption>
+				</figure>	
+				<figure>
+					<a href="products.php">
+						<img src="imgs/pork.png" alt="nice cut of pork">
+					</a>
+						<figcaption>Pork</figcaption>
+				</figure>
+				<figure>
+					<a href="products.php">
+						<img src="imgs/chicken.png" alt="nice cut of poultry">
+					</a>
+						<figcaption>Chicken</figcaption>
+				</figure>
+				<figure>
+					<a href="products.php">
+						<img src="imgs/lamb.png" alt="nice cut of lamb">
+					</a>
+					<figcaption>Lamb</figcaption>
+				</figure>
+				<figure>
+					<a href="products.php">
+						<img src="imgs/sausages.png" alt="homemade sausages">
+					</a>
+					<figcaption>Sausages</figcaption>				
+				</figure>
+				<figure>
+					<a href="products.php">
+						<img src="imgs/cheese.png" alt="deli cheese">
+					</a>
+					<figcaption>Deli</figcaption>
+				</figure>
+			</div>
+		</div>
+		
+		<div class="content-wrap">
+			<h2 class="underline white">Contact us</h2>
+			<!-- contact details -->
+			<div class="btmWrapper">
+				<div class="btmInfo">
+					<span>Opening Hours:</span>	
+					<span>Mon to Fri: <time datetime="0800">0800</time>-<time datetime="1800">1800</time></span>
+					<span>Sat to Sun: <time datetime="1030">1030</time>-<time datetime="1700">1700</time></span>
+				</div>
+				<address class="btmInfo h-card">	
+					<a href="https://goo.gl/maps/maJHvH7Akt7LfnARA">	<!-- link to google map -->
+						<svg class="icon icon-location">	<!-- svg icon -->
+							<use xlink:href="#icon-location"></use>	
+						</svg>
+						<span>41 Main Street, Ballyclare</span><br />
+					</a>
+					<a href="mailto:contact@jenkinsbutcher.com">	<!-- link to default mail app -->
+						<svg class="icon icon-envelop">	<!-- svg icon -->
+							<use xlink:href="#icon-envelop"></use>
+						</svg>
+						<span class="u-email">contact@jenkinsbutcher.com</span><br />
+					</a>
+					<a href="tel:+442893952009">	<!-- link to phone app -->
+						<svg class="icon icon-phone">	<!-- svg icon -->
+							<use xlink:href="#icon-phone"></use>
+						</svg>
+						<span class="p-tel">+44 28 9395 2009</span>
+					</a>
+				</address>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- || footer section || -->
+	<footer>
+		<nav id="bottom-nav" role=”navigation” aria-label="footer navigation">	<!-- bottom navigation bar -->
+			<ul>
+				<!-- <?php
+				if ($this_page == "About"){
+					echo "<li>About</li>";
+				} else{
+					echo "<li><a href=\"about.php\">About</a></li>";
+				}
+				if ($this_page == "Special"){
+					echo "<li>Special</li>";
+				} else{
+					echo "<li><a href=\"special.php\">Special</a></li>";
+				}
+				if ($this_page == "Products"){
+					echo "<li>Products</li>";
+				} else{
+					echo "<li><a href=\"products.php\">Products</a></li>";
+				}
+				if ($this_page == "Contact"){
+					echo "<li>Contact</li>";
+				} else{
+					echo "<li><a href=\"contact.php\">Contact</a></li>";
+				}
+				?> -->
+			</ul>
+		</nav>
+		<!-- website information -->
+		<p role=”contentinfo>Coursework by Caspar Leung - MA Web Design and Content Planning</p>
+		<p role=”contentinfo>University of Greenwich - <? echo date("Y"); ?></p>
+	</footer>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
