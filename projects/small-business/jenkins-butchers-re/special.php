@@ -3,7 +3,8 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">	<!-- support most characters and symbols -->
-	<link rel="icon" href="imgs/site-icon.ico" type="image/x-icon">	<!-- site icon -->
+	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">	<!-- site icon -->
+	<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 	<title>Special | Jenkin's Butchers</title>	<!-- webpage title -->
 	<link href="scripts/style.css" rel="stylesheet">	<!-- external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Required for mobile devices -->
