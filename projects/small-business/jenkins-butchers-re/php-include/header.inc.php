@@ -8,7 +8,7 @@
 		</picture>
 	</a>
 	<!-- top navigation bar -->
-	<nav id="top-nav" aria-lable = "website">
+	<nav id="top-nav" role=”navigation” aria-lable = "website">
 		<ul>
 			<?php
 			if ($this_page == "About"){

@@ -26,7 +26,7 @@
 	<main>
 		<h1>Jenkin's Butcher | Contact</h1>	<!-- header | current Page -->
 		<p id="sub" class="sub">Premium meat from local farm</p>	<!-- short slogan -->
-		<img class="banner" src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
+		<img class="banner" role=”banner” src="imgs/banner-home.jpg" alt="home banner">	<!-- banner reflecting the theme -->
 		<!-- | sections of content | -->
 		<div class="content-wrap h-card">
 			<h2 class="underline cw">How to find us</h2>
