@@ -1,11 +1,171 @@
 <html>
+
+<!-- START of head section of html -->
 	<head>
+		<title>Title of the Site</title>
+
+	<!-- external CSS -->
+		<link rel="stylesheet" href="style.css">
 	</head>
+<!-- END of head section of html -->
+
+<!-- START of body section of html -->
 	<body>
 		<h1>HTML</h1>
-		<h2>Basics</h2>
-			<!-- lang attribute can be use in mutiple elements-->
-			<p lang="en-us">Paragraph in English</p>
-			<p lang="fr">Paragraphe en Français</p>
+		<main>
+			<h2>Elements</h2>
+
+			<!-- <h1> ~ <h6> Header Tags -->
+				<!-- The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest. -->
+				<h1>Main heading</h1>
+				<h2>Level 2 heading</h2>
+				<h3>Level 3 heading</h3>
+				<h4>Level 4 heading</h4>
+				<h5>Level 5 heading</h5>
+				<h6>Level 6 heading</h6>
+
+			<!-- <p> paragraph tag -->
+				<!-- The <p> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. -->
+				<p>A paragraph consists of one or more sentences that form a self-contained unit of discourse.  The start of a paragraph is indicated by a new line.</p>
+				<p>Text is easier to understand when it is split up into units of text.  For example, a book may have chapters.  Chapters can have subheadings.  Under each heading there will be one ore more paragraph.</p>
+
+			<!-- <b> Bring attention to element -->
+				<!-- The <b> HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <b> for styling text; instead, you should use the CSS font-weight property to create boldface text, or the <strong> element to indicate that text is of special importance. -->
+				<p>Use the &lt;b&gt; for cases like <b class="keyword">keywords in a summary</b>, <b class="keyword">product names in a review</b>, or other spans of text whose typical presentation would be boldfaced (but not including any special importance).</p>
+
+			<!-- <strong> Strong Importance element -->
+				<!-- The <strong> HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. -->
+				<p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>	
+
+			<!-- <em> Emphasis element -->
+				<!-- The <em> HTML element marks text that has stress emphasis. The <em> element can be nested, with each level of nesting indicating a greater degree of emphasis. -->
+				<p>Get out of bed <em>now</em>!</p>
+
+				<p>We <em>had</em> to do something about it.</p>
+
+				<p>This is <em>not</em> a drill!</p>
+
+			<!-- <i> Idiomatic text element -->
+				<!-- The <i> HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the <i> naming of this element. -->
+				<p>I looked at it and thought <i>This can't be real!</i></p>
+
+				<p><i class="latin">Musa</i> is one of two or three genera in the family <i class="latin">Musaceae</i>; it includes bananas and plantains.</p>
+
+				<p>The term <i>bandwidth</i> describes the measure of how much information can pass through a data connection in a given amount of time.</p>
+
+			<!-- <sup> & <sub> Superscript and Subscript element -->
+				<p>On the 4<sup>th</sup> of September y
+					ou will learn about E=MC<sup>2</sup>.</p>
+				<p>The amount of CO<sub>2</sub> in the atmosphere grew by 2ppm in 2009<sub>1</sub>.</p>
+
+			<!-- <br> Linebreak element -->
+				<!-- The <br> HTML element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+				<p> O’er all the hilltops<br>
+				    Is quiet now,<br>
+				    In all the treetops<br>
+				    Hearest thou<br>
+				    Hardly a breath;<br>
+				    The birds are asleep in the trees:<br>
+				    Wait, soon like these<br>
+				    Thou too shalt rest.
+				</p>
+
+			<!-- <hr> Thematic Break (Horizontal Rule) element -->
+				<!-- The <hr> HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. -->
+				<p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+				<hr>
+
+				<p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+
+			<!-- <blockquote> Block quotation element -->
+				<!-- The <blockquote> HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <cite> element. -->
+
+
+			<!-- <q> Inline quotation element -->
+				<!-- The <q> HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <blockquote> element. -->
+				<p>According to Mozilla's website,<q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 was released in 2004 and became a big success.</q></p>
+
+			<!-- <cite> Citation element -->
+				<!-- The <cite> HTML element is used to describe a reference to a cited creative work, and must include the title of that work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. -->
+				<figure>
+				    <blockquote>
+				        <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+				    </blockquote>
+				    <figcaption>First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).</figcaption>
+				</figure>
+
+			<!-- <figure> Figure with optional caption element -->
+				<!-- The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit. -->
+				<figure>
+				  <p style="white-space:pre">
+				Bid me discourse, I will enchant thine ear,
+				  Or like a fairy trip upon the green,
+				Or, like a nymph, with long dishevell'd hair,
+				  Dance on the sands, and yet no footing seen:
+				Love is a spirit all compact of fire,
+				  Not gross to sink, but light, and will aspire.</p>
+				  <figcaption><cite>Venus and Adonis</cite>,
+				    by William Shakespeare</figcaption>
+				</figure>
+
+			<!-- <pre> Preformatted text element -->
+				<!-- The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written. -->
+				<pre>
+				let i = 5;
+
+				if( i &lt; 10 &amp;&amp; i &gt; 0 )
+				  return &quot; Single Digit Number &quot;
+				</pre>
+
+			<!-- <abbr> Abbreviation element -->
+				<!-- The <abbr> HTML element represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else. -->
+				<!-- providing an expansion -->
+				<p>Ashok's joke made me <abbr title="Laugh Out Loud">LOL</abbr> big
+				time.</p>
+				<!-- defining an abbreviation together with <dfn> -->
+				<p><dfn id="html"><abbr title="HyperText Markup Language">HTML</abbr>
+				</dfn> is a markup language used to create the semantics and structure
+				of a web page.</p>
+
+				<p>A <dfn id="spec">Specification</dfn>
+				(<abbr title="Specification">spec</abbr>) is a document that outlines
+				in detail how a technology or API is intended to function and how it is
+				accessed.</p>
+
+			<!-- <dfn> Definition element -->
+				<!-- The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. The <p> element, the <dt>/<dd> pairing, or the <section> element which is the nearest ancestor of the <dfn> is considered to be the definition of the term. -->
+				<p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+
+			<!-- <address>  Contact address element-->
+				<!-- The <address> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization. -->
+				<address>
+				  You can contact author at <a href="http://www.somedomain.com/contact">
+				  www.somedomain.com</a>.<br>
+				  If you see any bugs, please <a href="mailto:webmaster@somedomain.com">
+				  contact webmaster</a>.<br>
+				  You may also want to visit us:<br>
+				  Mozilla Foundation<br>
+				  331 E Evelyn Ave<br>
+				  Mountain View, CA 94041<br>
+				  USA
+				</address>
+
+			<!-- <ins> & <del> inscert and delete text element -->
+				<!-- The <ins> HTML element represents a range of text that has been added to a document. You can use the <del> element to similarly represent a range of text that has been deleted from the document. -->
+				<p>“You're late!”</p>
+				<del>
+				    <p>“I apologize for the delay.”</p>
+				</del>
+				<ins cite="../howtobeawizard.html" datetime="2018-05">
+				    <p>“A wizard is never late …”</p>
+				</ins>
+			<h2>Attributes</h2>
+				<!-- lang attribute can be use in multiple elements-->
+				<p lang="en-us">Paragraph in English</p>
+				<p lang="fr">Paragraphe en Français</p>
+		</main>
 	</body>
+<!-- END of body section of html -->
+
 </html>

@@ -1,0 +1,65 @@
+/* HTML demo template */
+/* from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
+/* blockquote tag */
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+/* from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins */
+/* ins and del tag */
+del,
+ins {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+del {
+    background-color: #fbb;
+}
+
+ins {
+    background-color: #d4fcbc;
+}
+
+del::before,
+ins::before {
+    position: absolute;
+    left: .5rem;
+    font-family: monospace;
+}
+
+del::before {
+    content: '−';
+}
+
+ins::before {
+    content: '+';
+}
+
+p {
+    margin: 0 1.8rem 0;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+}
+
+/* stylin abbreviations */
+/* from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr */
+abbr {
+  font-variant: all-small-caps;
+}
+
