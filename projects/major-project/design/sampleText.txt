@@ -1,0 +1,9 @@
+What is "randome-access memory" or "RAM?
+
+RAM acts as computer's short-term memory, which allows quick 
+access of data used by programs on your computer.  Imagine you 
+are going to prepare a meal, the prep area where you would place 
+ingridients to be progress is just like "RAM", by doing so you don't
+have to travel around the kitchen while preparing food.
+
+
