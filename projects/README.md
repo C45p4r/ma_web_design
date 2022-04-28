@@ -14,7 +14,7 @@ This folder contains all the projects I am working on
 
 4. Design ethics 
 
-5. Small business website [Small Business Website](https://curiositydriven.uk/jenkins-butchers/)
+5. Small business website - [Jenkins Butchers](https://curiositydriven.uk/jenkins-butchers/)
 
 ---
 
