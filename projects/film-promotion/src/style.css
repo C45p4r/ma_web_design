@@ -118,6 +118,7 @@ html {
 body {
 	 padding: 0;
 	 margin: 0;
+	 background-color: #ededed;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -126,8 +127,9 @@ body {
 
 ================================================= */
 
+/* || hero image || */
  #hero, .layer {
-	 min-height: 800px;
+	 min-height: 200px;
 }
 
 #hero-mobile {
@@ -136,22 +138,27 @@ body {
 	 background-repeat: no-repeat;
 	 background-position: center bottom;
 	 background-size: cover;
+	 width: 100%;
 	 height: 50%;
+	 min-height: 300px;
+	 position: relative;
 }
 
 #hero {
 	display: none;
  	max-width: 1366px;
- 	width: 100%;
+ 	width: 100vw;
+ 	height: 50vh;
 	overflow: hidden;
 	position: relative;
+	/*z-index: -1;*/
 }
 
 .layer {
 	 background-position: bottom center;
 	 background-repeat: no-repeat;
 	 width: 100%;
-	 height: 100%;
+	 height: 50%;
 	 position: fixed;
 	 z-index: -1;
 }
@@ -174,7 +181,8 @@ body {
 
 .layer-3 {
 	 background-image: url(hero/girl-in-red.png);
-	 background-position: left bottom;
+	 background-size: 30vh;
+	 background-position: 10% 100%;
 }
 
 .layer-4 {
@@ -188,20 +196,43 @@ body {
 	 opacity: .3;
 }
 
+.layer-text {
+
+}
+
+/* || navigation || */
+nav {
+	padding: 0 1em;
+	color: #9b6d7d;
+	background-color: #030001;
+}
+
+nav ul {
+	padding: 1em;
+	display: flex;	/* flex box */
+	flex-direction: row;	
+	justify-content: center;	/* align items horizontally */
+	align-items: center;	/* align items vertically */
+	gap: 1em;		/* add some space between flex items*/
+	gap: calc(.5em + 1.2vw);
+	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
+}
+
+ul > *{
+/*display: inline-block;*/
+	width: auto;
+	flex-grow: 1;		/* allow flex items to auto adjust */
+	flex-shrink: 1;		/* allow flex items to shrink by themselves */
+}
+
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
 		CH03 - Main Content Styling 
 
 ================================================= */
 
-body {
-/* content */
-	background-color: white;
-	color: #fff;
-}
-
 main {
-	 background-color: #130d0a;
+	 background-color: #ededed;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -212,13 +243,43 @@ main {
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
-		CH05 - Typography and colours
+		CH05 - Typography
 
 ================================================= */
 
- p {
-	 color: #ede0d5;
+/* apply to all */
+* {
+	font-family: 'Montserrat', Arial, Helvetica, Verdana, Geneva, sans-serif;
+	font-size: 1em; 	/*fallback if calc() doesn't work */
+	font-size: calc(1em + .8vw);
+}
 
+/* header font */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Special Elite', 'Comic Sans MS', cursive;
+}
+
+h1 {
+	font-size: 2.5em; 	/*fallback if calc() doesn't work */
+	font-size: calc(2.5em + .8vw);
+}
+
+h2 {
+	font-size: 2.2em; 	/*fallback if calc() doesn't work */
+	font-size: calc(2.2em + .8vw);	
+}
+
+h3, h4, h5, h6 {
+	font-size: 1.8em; 	/*fallback if calc() doesn't work */
+	font-size: calc(1.8em + .8vw);
+}
+
+.top li {
+	font-family: 'Special Elite', 'Comic Sans MS', cursive;
+}
+
+.altfont {
+	font-family: 'Cormorant Garamond', 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -227,13 +288,22 @@ main {
 
 ================================================= */
 
+a:link, a:visited {
+  color: #585a5b;
+  text-decoration: none;
+  
+}
+a:hover,  a:active, a:focus{
+  color: #030001;
+}
+
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
 		CH07 - Media Query
 
 ================================================= */
 
- @media (min-width: 760px) {
+@media (min-width: 760px) {
 	 #hero {
 		 display: block;
 	}
@@ -242,4 +312,4 @@ main {
 	}
 }
 
-/* /ᐠ.ꞈ.ᐟ\ ==================== || HAVE A GOOD DAY || ==================== /ᐠ.ꞈ.ᐟ\ */
+/* /ᐠ.ꞈ.ᐟ\ ==================== || HAVE A GOOD DAY || ==================== /ᐠ.ꞈ.ᐟ\ 
