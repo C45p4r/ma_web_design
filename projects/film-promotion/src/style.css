@@ -408,6 +408,17 @@ dd {
 
 ================================================= */
 
+
+footer p {
+	color: var(--color-background);
+	background-color: var(--color-main);
+	height: 2%;
+	font-size:.7em;
+	padding-top: .1em;
+	padding-bottom: .5em;
+	text-align: center;
+}
+
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
 		CH05 - Typography
@@ -461,6 +472,11 @@ a:link, a:visited {
 }
 a:hover,  a:active, a:focus{
   color: var(--color-main);
+}
+
+a:link.ref, a:visited.ref {
+	background-color:  var(--color-background);
+	padding: .1em;
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
