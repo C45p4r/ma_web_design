@@ -136,6 +136,7 @@ body {
 
 /* use as borders, frames,outlines colour*/
 	--color-subtle: #585a5b; /* shadow grey */
+	--border: .1em solid rgba(88, 90, 91, .2); /* border */
 
 /* use for main copy */
 	--color-main: #030001; /* night black */
@@ -244,7 +245,7 @@ nav ul {
 	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
 }
 
-ul > *{
+nav ul > *{
 	padding: 1em 0;
 	width: auto;
 	flex-grow: 1;		/* allow flex items to auto adjust */
@@ -281,22 +282,24 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: .5em;
 }
 
+
 /* image general */
 img {
 	display: block;
 	width: 100%;
 	height: auto;
+	min-width: 250px;
+	max-width: 450px;
 }
 
 section {
-	margin-top: 2em;
-}
-
-/* section for header + img + text */
-section.general {
 	display: flex;
 	flex-direction: column;
 	gap: .5em;		/* add some space between flex items*/
+	margin-top: 2em;
+	padding: .5em;
+
+	border-top: var(--border);
 }
 
 /* button format */
@@ -331,13 +334,42 @@ section.general {
 	border-bottom: .1em solid var(--color-action);
 	border-right: .1em solid var(--color-action);
 	color: var(--color-action);
-	transform: translateX(-10vw);
+	transform: translateX(10vw);
 }
 
 button:hover::after {
-	content: " <";
+	content: " :)";
 }
 
+
+/* iframe */
+iframe {
+	min-height: 200px;
+
+}
+
+
+/* description list style */
+dl {
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 0;
+	grid-row-gap: 1em;
+	font-size: .8em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt::after {
+	content: ": ";
+}
+
+dd {
+	line-height: 1.5;
+}
 
 
 /* typing animation */
@@ -463,8 +495,7 @@ a:hover,  a:active, a:focus{
 	/* section image */
 	section.general > :nth-child(2) { 
 		grid-area: 2 / 1 / 3 / 2;
-		border: .2em solid var(--color-main); 
-		min-width: 250px;
+		border: var(--border); 
 	} 
 
 	/* section text */
@@ -472,7 +503,7 @@ a:hover,  a:active, a:focus{
 		grid-area: 2 / 2 / 3 / 3; 
 	}
 
-	section.general-invert {
+	section.general.invert {
 		display: grid;
 		grid-template-columns: 1fr min-content;
 		grid-template-rows: 1fr min-content; 
@@ -483,20 +514,30 @@ a:hover,  a:active, a:focus{
 	}
 
 	/* section title */
-	section.general-invert > :nth-child(1) { 
+	section.general.invert > :nth-child(1) { 
 		grid-area: 1 / 1 / 2 / 3; 
 	}
 
 	/* section image */
-	section.general-invert > :nth-child(2) { 
+	section.general.invert > :nth-child(2) { 
 		grid-area: 2 / 2 / 3 / 3;
 		border: .2em solid var(--color-main); 
 	} 
 
 	/* section text */
-	section.general-invert > :nth-child(3) { 
+	section.general.invert > :nth-child(3) { 
 		grid-area:  2 / 1 / 3 / 2;
 	}
+
+	.button:hover {
+		transform: translateX(-10vw);
+		border-left: .1em solid var(--color-action);
+		border-right: 0;
+	}
+
+	button:hover::after {
+	content: " <";
+}
 	
 }
 
