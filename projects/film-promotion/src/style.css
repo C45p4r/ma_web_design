@@ -68,9 +68,9 @@ table {
 
 	- - - - - - - -
 	~ Colour used ~
-		Warm coat red 		- #9b6d7d 	
-		Dim candle blue 	- #515d92	
-		Light amber 		- #e4c7bb	
+		Warm coat red 		- #9b6d7d  	> dim flame red 	#b50000	
+		Dim candle blue 	- #515d92	> del?
+		Light amber 		- #e4c7bb	> old paper yellow  #edecd4
 		Night black 		- #030001	
 		Showdow grey 		- #585a5b	
 		Smoky white			- #ededed	
@@ -119,6 +119,34 @@ body {
 	 padding: 0;
 	 margin: 0;
 	 background-color: #ededed;
+}
+
+/* custom properties */
+:root {
+
+	/* || colours || */
+/* use for borders, hover,background, highlights */
+	--color-assent: #edecd4; /* old paper yellow */
+
+/*use for meta data & references */
+	--color-reference: #515d92; /* dim candle blue */
+
+/* use for links and important notes */
+	--color-action: #b50000; /* dim flame red */
+
+/* use as borders, frames,outlines colour*/
+	--color-subtle: #585a5b; /* shadow grey */
+
+/* use for main copy */
+	--color-main: #030001; /* night black */
+
+/* use for page background */
+	--color-background: #ededed; /* smoky white */
+
+/* drop shadow */
+	--shadow-light:  0px 10px 10px rgba(0, 0, 0, 0.1);
+	--shadow-more: 10px 10px 30px rgba(0, 0, 0, 0.3);
+
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -203,26 +231,38 @@ body {
 /* || navigation || */
 nav {
 	padding: 0 1em;
-	color: #9b6d7d;
-	background-color: #030001;
+	color: var(--color-assent);
+	background-color: var(--color-main);
 }
 
 nav ul {
-	padding: 1em;
+	padding: 0;
 	display: flex;	/* flex box */
 	flex-direction: row;	
 	justify-content: center;	/* align items horizontally */
 	align-items: center;	/* align items vertically */
-	gap: 1em;		/* add some space between flex items*/
-	gap: calc(.5em + 1.2vw);
 	flex-wrap: nowrap;	/* allow flex items to wrap (row independent) */
 }
 
 ul > *{
-/*display: inline-block;*/
+	padding: 1em 0;
 	width: auto;
 	flex-grow: 1;		/* allow flex items to auto adjust */
 	flex-shrink: 1;		/* allow flex items to shrink by themselves */
+	text-align: center;
+	transition: all 1s ease 0s;
+}
+
+li.current {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	text-decoration: underline;
+}
+ul > a:hover {
+	background-color: var(--color-background);
+	box-shadow: 0px 5px 10px 5px var(--colour-subtle);
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -232,8 +272,103 @@ ul > *{
 ================================================= */
 
 main {
-	 background-color: #ededed;
+	padding: .5em;
+	padding: calc(.5em + 2vw);;
+	background-color: var(--color-background);
 }
+
+h1, h2, h3, h4, h5, h6 {
+	padding-bottom: .5em;
+}
+
+/* image general */
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section {
+	margin-top: 2em;
+}
+
+/* section for header + img + text */
+section.general {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;		/* add some space between flex items*/
+}
+
+/* button format */
+.btwrap {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	margin:  .2em;
+	max-width: 250px;
+	max-height: 200px;
+	font-size: 1.2em;
+	padding: .3em;
+	font-weight: 700;
+	color: var(--color-background);
+	background-color: var(--color-action);
+	border: none;
+	text-align: left;
+	border-radius: .5em;
+	box-shadow: var(--shadow-light);
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	outline: none;
+ }
+
+.button:hover {
+	background-color: var(--color-background);
+	box-shadow: var(--shadow-more);
+	border-bottom: .1em solid var(--color-action);
+	border-right: .1em solid var(--color-action);
+	color: var(--color-action);
+	transform: translateX(-10vw);
+}
+
+button:hover::after {
+	content: " <";
+}
+
+
+
+/* typing animation */
+
+.typing {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 10vh;
+	position: relative;
+}
+ .typing::after {
+	 content: "|";
+	 position: absolute;
+	 right: 0;
+	 width: 100%;	 
+	 color: var(--color-main);
+	 background: var(--color-background);
+	 animation: typing 5s steps(20) forwards, mid 1s infinite;
+}
+ @keyframes typing {
+	 to {
+		 width:0;
+	}
+}
+ @keyframes mid {
+	 50% {
+		 color: transparent;
+	}
+}
+
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
@@ -260,18 +395,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.5em; 	/*fallback if calc() doesn't work */
-	font-size: calc(2.5em + .8vw);
-}
-
-h2 {
-	font-size: 2.2em; 	/*fallback if calc() doesn't work */
-	font-size: calc(2.2em + .8vw);	
-}
-
-h3, h4, h5, h6 {
 	font-size: 1.8em; 	/*fallback if calc() doesn't work */
 	font-size: calc(1.8em + .8vw);
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 1.5em; 	/*fallback if calc() doesn't work */
+	font-size: calc(1.5em + .8vw);
+}
+
+p {
+	line-height: 1.7;
 }
 
 .top li {
@@ -289,12 +423,12 @@ h3, h4, h5, h6 {
 ================================================= */
 
 a:link, a:visited {
-  color: #585a5b;
+  color: var(--color-subtle);
   text-decoration: none;
   
 }
 a:hover,  a:active, a:focus{
-  color: #030001;
+  color: var(--color-main);
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
@@ -303,13 +437,71 @@ a:hover,  a:active, a:focus{
 
 ================================================= */
 
-@media (min-width: 760px) {
+@media (min-width: 550px) {
 	 #hero {
 		 display: block;
 	}
 	 #hero-mobile {
 		 display: none;
 	}
+
+	section.general {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		grid-template-rows: 1fr min-content; 
+		grid-column-gap: 1em;
+		grid-row-gap: 0;
+		justify-content: center;
+		align-content: center; 
+	}
+
+	/* section title */
+	section.general > :nth-child(1) { 
+		grid-area: 1 / 1 / 2 / 3; 
+	}
+
+	/* section image */
+	section.general > :nth-child(2) { 
+		grid-area: 2 / 1 / 3 / 2;
+		border: .2em solid var(--color-main); 
+		min-width: 250px;
+	} 
+
+	/* section text */
+	section.general > :nth-child(3) { 
+		grid-area: 2 / 2 / 3 / 3; 
+	}
+
+	section.general-invert {
+		display: grid;
+		grid-template-columns: 1fr min-content;
+		grid-template-rows: 1fr min-content; 
+		grid-column-gap: 1em;
+		grid-row-gap: 0;
+		justify-content: center;
+		align-content: center; 
+	}
+
+	/* section title */
+	section.general-invert > :nth-child(1) { 
+		grid-area: 1 / 1 / 2 / 3; 
+	}
+
+	/* section image */
+	section.general-invert > :nth-child(2) { 
+		grid-area: 2 / 2 / 3 / 3;
+		border: .2em solid var(--color-main); 
+	} 
+
+	/* section text */
+	section.general-invert > :nth-child(3) { 
+		grid-area:  2 / 1 / 3 / 2;
+	}
+	
+}
+
+@media (min-width: 750px) {
+
 }
 
 /* /ᐠ.ꞈ.ᐟ\ ==================== || HAVE A GOOD DAY || ==================== /ᐠ.ꞈ.ᐟ\ 
