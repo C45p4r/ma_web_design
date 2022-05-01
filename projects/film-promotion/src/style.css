@@ -230,7 +230,7 @@ body {
 
 /* || navigation || */
 nav {
-	padding: 0 1em;
+	padding: 0;
 	color: var(--color-assent);
 	background-color: var(--color-main);
 }
@@ -262,7 +262,7 @@ li.current {
 }
 ul > a:hover {
 	background-color: var(--color-background);
-	box-shadow: 0px 5px 10px 5px var(--colour-subtle);
+	box-shadow: var(--shadow-more);
 }
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
