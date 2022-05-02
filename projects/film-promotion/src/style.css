@@ -48,6 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
 
 /* /ᐠ.ꞈ.ᐟ\\\\\ / ===================================
 
@@ -121,6 +125,12 @@ body {
 	 background-color: #ededed;
 }
 
+/* text highlight colours */
+::selection{
+    background-color: var(--color-subtle);
+    color: var(--color-background);
+}
+
 /* custom properties */
 :root {
 
@@ -136,17 +146,21 @@ body {
 
 /* use as borders, frames,outlines colour*/
 	--color-subtle: #585a5b; /* shadow grey */
+	--color-subtle-transparent: rgba(88, 90, 91, .2); /* shadow grey */
 	--border: .1em solid rgba(88, 90, 91, .2); /* border */
 
 /* use for main copy */
 	--color-main: #030001; /* night black */
+	--color-main-transparent:  rgba(3, 0, 1, .7);
 
 /* use for page background */
 	--color-background: #ededed; /* smoky white */
+	--color-transparent-bg:  rgba(237, 237, 237,.5);
 
 /* drop shadow */
 	--shadow-light:  0px 10px 10px rgba(0, 0, 0, 0.1);
 	--shadow-more: 10px 10px 30px rgba(0, 0, 0, 0.3);
+	--shadow-inverted:  10px 10px 30px rgba(255, 255, 255, 0.8);
 
 }
 
@@ -234,6 +248,8 @@ nav {
 	padding: 0;
 	color: var(--color-assent);
 	background-color: var(--color-main);
+	border-top: var(--border);
+	border-bottom: var(--border);
 }
 
 nav ul {
@@ -280,6 +296,22 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom: .5em;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+h1 {
+	background-color: var(--color-main);
+	color: var(--color-background);
+	padding: .5em;
+	transition: 3s;
+}
+
+h1:hover {
+	background-color: var(--color-assent);
+	color: var(--color-action);
 }
 
 
@@ -290,17 +322,86 @@ img {
 	height: auto;
 	min-width: 250px;
 	max-width: 450px;
+	border: var(--border);
 }
+
 
 section {
 	display: flex;
 	flex-direction: column;
 	gap: .5em;		/* add some space between flex items*/
 	margin-top: 2em;
-	padding: .5em;
+	padding: .2em;
 
 	border-top: var(--border);
 }
+
+.intersect {
+	background-color: var(--color-main-transparent);
+	color: var(--color-background);
+	margin-top: -2em;
+	margin-left: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-left: .2em solid var(--color-subtle);
+	border-bottom: .4em solid var(--color-subtle);
+}
+
+.intersect2 {
+	background-color: transparent;
+	color: var(--color-main);
+	margin-top: -2em;
+	margin-right: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+	background-color: var(--color-transparent-bg);
+	border-right: .2em solid var(--color-subtle);
+	border-bottom: .4em solid var(--color-subtle);
+}
+
+.three {
+	display: flex;
+	flex-direction: row;
+	font-size: 75%;
+	gap: 1em;
+}
+
+.three > * {
+	max-width: 5em;
+	padding: .2em;
+	transition: 2s;
+}
+
+.three p:hover {
+	background-color: var(--color-background);
+	color: var(--color-main);
+}
+
+.three > :nth-child(1) {
+	color: var(--color-background);
+	font-weight: bold;
+}
+
+.four {
+	display: flex;
+	flex-direction: column;
+	font-size: 75%;
+	gap: 1em;
+	line-height: 1.5;
+}
+
+.four > * {
+	padding: 1em;
+	background-color: var(--color-subtle-transparent);
+	color: var(--color-main);
+	transition: 1s;
+}
+
+.four > div:hover {
+	background-color: var(--color-main);
+	color: var(--color-background);
+}
+
 
 /* button format */
 .btwrap {
@@ -337,6 +438,21 @@ section {
 	transform: translateX(10vw);
 }
 
+.intersect .button:hover {
+	transform: translateX(0vw);
+}
+
+.intersect .button:hover::after {
+	content: "";
+}
+
+.button:focus {
+	background-color: var(--color-action);
+	color: var(--color-background);
+	border-bottom: .1em solid var(--color-background);
+	border-right: .1em solid var(--color-background);
+}
+
 button:hover::after {
 	content: " :)";
 }
@@ -369,6 +485,54 @@ dt::after {
 
 dd {
 	line-height: 1.5;
+}
+
+
+.side-content-styled {
+	background: var(--color-main-transparent);
+	color: var(--color-background);
+	padding: 1em;
+}
+
+.side-content-styled p {
+	margin-bottom: 1em;
+}
+
+/* block quote */
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+blockquote p {
+    padding: 1em;
+    background: var(--color-subtle-transparent);
+    border-radius: .2em;
+    transition: 1s;
+}
+
+blockquote p:hover {
+	background: var(--color-main-transparent);
+	color: var(--color-background);
+}
+
+blockquote p::before {
+    content: "\201C";
+    font-size: 150%;
+    color: var(--color-action);
+}
+
+blockquote p::after {
+    content: "\201D";
+}
+
+figure {
+	margin-bottom: 2em;
+}
+
+figure figcaption {
+	text-align: right;
+	padding-right: 1em;
 }
 
 
@@ -433,7 +597,7 @@ footer p {
 }
 
 /* header font */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .sub {
 	font-family: 'Special Elite', 'Comic Sans MS', cursive;
 }
 
@@ -552,8 +716,29 @@ a:link.ref, a:visited.ref {
 	}
 
 	button:hover::after {
-	content: " <";
-}
+		content: " <";
+	}
+
+	.four {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	.four > :nth-child(1) { 
+		grid-area: 1 / 1 / 2 / 2; 
+	}
+	.four > :nth-child(2) { 
+		grid-area: 1 / 2 / 2 / 3; 
+	}
+	.four > :nth-child(3) { 
+		grid-area: 2 / 1 / 3 / 2; 
+	}
+	.four > :nth-child(4) { 
+		grid-area: 2 / 2 / 3 / 3; 
+	}
 	
 }
 
