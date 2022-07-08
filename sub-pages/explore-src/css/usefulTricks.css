@@ -1,0 +1,29 @@
+html {
+	font-size: 62.5%;	/*making 1rem = 10px*/
+}
+
+body {
+	font-size: 2.1rem	/*with the 62.5% font size declared in the html element = 21px*/;
+}
+
+/*  for readability reasons, best to keep paragrapghs under 75 characters per line */
+div.readability {
+	max-width: 75ch		/*ch ~ the width of 0 of any given font*/;
+}
+
+/* width: % / vw / ch (text based) */
+div.settingWidth {
+	width:  80%;		/*often with max-width*/
+	max-width: 75ch;	/*ch ~ the width of 0 of any given font*/;
+}
+
+/* height (only if necessary): % / rem / vh */
+div.settingHeight	{
+	height:  80%;	/*not recommanded for most situation for using "height" cos might cause overflow*/
+	min-height: 80vh;	/*might cause problem on mobile devices*/
+}
+
+/* padding and margin: em / rem */
+.paddingAndMargin {
+
+}
