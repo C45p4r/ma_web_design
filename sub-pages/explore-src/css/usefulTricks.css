@@ -24,6 +24,14 @@ div.settingHeight	{
 }
 
 /* padding and margin: em / rem */
-.paddingAndMargin {
 
+/*  em for padding on buttons */
+button.sizeBasedOnText {
+	font-size: 2rem;	/* padding will grow or shrinks with the change of font-size */
 }
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 1rem;	/* consistent through out the document */
+	margin-top: 1em;	/* spacing for headings will be larger because of larger font-size */
+}
+

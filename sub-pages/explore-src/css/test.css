@@ -49,20 +49,35 @@ table {
 
 /* || My CSS || */
 
-div {
-	border: 1px solid green;
-	padding: 1em;
-}
-
-.old-container {
-	width:  100%;
-	max-width: 70rem;
-	padding: 2rem;
-	margin:  2em auto;
-}
-
-.modern-container {
-	width:  min(100% - 2rem, 70rem);
+html {
+	width: min(100% - 2rem, 70rem);
 	margin-inline:  auto;
+	background-color: grey;
+}
+
+/* Testing the differences between the unit "rem" and "em" on spacing */
+
+button {
+	display: block;
+	margin-top: 1rem;
+	background-color: green;
+	padding: 1em;
+	/*padding: 1rem;*/
+}
+
+.btn1 {
+	font-size: 1em;
+}
+
+.btn1b {
+	font-size: 2em;
+}
+
+.btn2 {
+	font-size: 1rem;
+}
+
+.btn2b {
+	font-size: 2rem;
 }
 

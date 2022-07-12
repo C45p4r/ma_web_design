@@ -46,23 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* || My CSS || */
-
-div {
-	border: 1px solid green;
-	padding: 1em;
-}
-
-.old-container {
-	width:  100%;
-	max-width: 70rem;
-	padding: 2rem;
-	margin:  2em auto;
-}
-
-.modern-container {
-	width:  min(100% - 2rem, 70rem);
-	margin-inline:  auto;
-}
-
