@@ -52,10 +52,9 @@ table {
 html {
 	width: min(100% - 2rem, 70rem);
 	margin-inline:  auto;
-	background-color: grey;
 }
 
-/* Testing the differences between the unit "rem" and "em" on spacing */
+/* Testing the differences between the unit "rem" and "em" on spacing by using <button> */
 
 button {
 	display: block;
@@ -79,5 +78,25 @@ button {
 
 .btn2b {
 	font-size: 2rem;
+}
+
+/* Testing the differences between the unit "rem" and "em" on spacing */
+
+.main-wrapper {
+	width:  min(100% - 2rem, 70ch);
+	margin-inline:  auto;
+	border: 1px solid black;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	grid-auto-rows: minmax(100px, auto);
+	font-size: 2em;
+
+	overflow: hidden;
+}
+
+.container1 {
+	grid-column: 1 / 3;
 }
 
